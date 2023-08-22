@@ -142,83 +142,84 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <RadioButton
         android:id="@+id/blondbtn"
         android:layout_width="100dp"
         android:layout_height="40dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="480dp"
         android:background="@drawable/btn_white_blackstroke"
+        android:buttonTint="#FFEB3B"
         android:text="금발"
         android:textSize="7pt"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <RadioButton
         android:id="@+id/redbtn"
         android:layout_width="100dp"
         android:layout_height="40dp"
         android:layout_marginStart="150dp"
         android:layout_marginTop="480dp"
         android:background="@drawable/btn_white_blackstroke"
+        android:buttonTint="#F44336"
         android:text="빨간색"
         android:textSize="7pt"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <RadioButton
         android:id="@+id/bluebtn"
         android:layout_width="100dp"
         android:layout_height="40dp"
         android:layout_marginStart="280dp"
         android:layout_marginTop="480dp"
         android:background="@drawable/btn_white_blackstroke"
+        android:buttonTint="#03A9F4"
         android:text="파란색"
         android:textSize="7pt"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <RadioButton
         android:id="@+id/whitebtn"
         android:layout_width="100dp"
         android:layout_height="40dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="540dp"
         android:background="@drawable/btn_white_blackstroke"
+        android:buttonTint="#E6DFDF"
         android:text="흰색"
         android:textSize="7pt"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <RadioButton
         android:id="@+id/blackbtn"
         android:layout_width="100dp"
         android:layout_height="40dp"
         android:layout_marginStart="150dp"
         android:layout_marginTop="540dp"
         android:background="@drawable/btn_white_blackstroke"
-        android:text="검정색"
+        android:buttonTint="#000000"
 
+        android:text="검정색"
         android:textSize="7pt"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <RadioButton
         android:id="@+id/greybtn"
         android:layout_width="100dp"
         android:layout_height="40dp"
         android:layout_marginStart="280dp"
         android:layout_marginTop="540dp"
         android:background="@drawable/btn_white_blackstroke"
+        android:buttonTint="#9F9C9C"
         android:text="회색"
         android:textSize="7pt"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.constraintlayout.widget.Barrier
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:barrierDirection="top" />
 
     <View
         android:id="@+id/divider"
