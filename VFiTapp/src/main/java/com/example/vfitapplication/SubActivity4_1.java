@@ -4,6 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.RadioButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -25,12 +28,13 @@ public class SubActivity4_1 extends AppCompatActivity {
         Button baldbtn =  findViewById(R.id.baldbtn);
 
         // HairColor button
-        Button blondbtn = findViewById(R.id.blondbtn);
-        Button redbtn =  findViewById(R.id.redbtn);
-        Button bluebtn = findViewById(R.id.bluebtn);
-        Button whitebtn = findViewById(R.id.whitebtn);
-        Button blackbtn = findViewById(R.id.blackbtn);
-        Button greybtn = findViewById(R.id.greybtn);
+        RadioButton blondbtn = findViewById(R.id.blondbtn);
+        RadioButton redbtn =  findViewById(R.id.redbtn);
+        RadioButton bluebtn = findViewById(R.id.bluebtn);
+        RadioButton whitebtn = findViewById(R.id.whitebtn);
+        RadioButton blackbtn = findViewById(R.id.blackbtn);
+        RadioButton greybtn = findViewById(R.id.greybtn);
+
 
         // HairStyle text
         fringebtn.setOnClickListener(new View.OnClickListener() {
