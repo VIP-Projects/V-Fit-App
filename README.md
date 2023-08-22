@@ -5,9 +5,9 @@ V FiT Android Studio
 
 ## File Path
 
-- <b>javafile</b> : VFiTapp/src/main/java/com/example/myapplication
-- <b>layout</b> : VFiTapp/src/main/res/layout
-- <b>img 저장 경로</b> : VFiTapp/src/main/res/drawable/suzi.jpg
+- <b>javafile</b> : main/java/com/example/myapplication
+- <b>layout</b> : main/res/layout
+- <b>img 저장 경로</b> : main/res/drawable/suzi.jpg
 
 <br>
 
