@@ -18,13 +18,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@android:drawable/screen_background_light_transparent" />
+        app:srcCompat="@drawable/white" />
 
     <ImageView
         android:id="@+id/vfit_hair_result"
-        android:layout_width="382dp"
+        android:layout_width="355dp"
         android:layout_height="417dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="96dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,18 +32,17 @@
         app:srcCompat="@android:drawable/alert_dark_frame" />
 
     <TextView
-        android:id="@+id/textNeutral"
+        android:id="@+id/textMani"
         android:layout_width="300dp"
         android:layout_height="30dp"
-        android:layout_marginTop="515dp"
-        android:fontFamily="sans-serif"
+        android:layout_marginTop="600dp"
         android:gravity="center"
-        android:text="neutral"
+        android:text="manipulation_strength"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -51,29 +50,46 @@
         android:id="@+id/textTarget"
         android:layout_width="300dp"
         android:layout_height="30dp"
-        android:layout_marginTop="550dp"
+        android:layout_marginTop="564dp"
         android:gravity="center"
         android:text="target"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textMani"
+        android:id="@+id/textNeutral"
         android:layout_width="300dp"
         android:layout_height="30dp"
-        android:layout_marginTop="585dp"
+        android:layout_marginTop="528dp"
+        android:fontFamily="sans-serif"
         android:gravity="center"
-        android:text="manipulation_strength"
+        android:text="neutral"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="355dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="가상 피팅 결과"
+        android:background="#000000"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
