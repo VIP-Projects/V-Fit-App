@@ -8,7 +8,7 @@
 - <b>layout</b> : VFiTapp/src/main/res/layout
 - <b>img 저장 경로</b> : VFiTapp/src/main/res/drawable <br>
 
-※ 가상피팅 결과물은 ./res/drawble 디렉토리에 저장해야 함.
+※ 가상피팅 결과물은 ./res/drawble 디렉토리에 저장해야 함. <br>
 ※ 옷 결과물은 ./res/drawble 디렉토리에 저장해야 함.
   
 <br>
