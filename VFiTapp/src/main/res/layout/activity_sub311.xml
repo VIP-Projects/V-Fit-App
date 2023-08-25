@@ -33,7 +33,7 @@
         android:layout_marginTop="60dp"
         android:fontFamily="sans-serif"
         android:gravity="center"
-        android:text="가상 피팅 결과"
+        android:text="의상 피팅 결과"
         android:background="#000000"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
