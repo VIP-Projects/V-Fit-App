@@ -108,7 +108,7 @@ recommend8.setImageResource(R.drawable.cloth4);
 
 <br>
 
-## 3. Layout
+## 3. Prototype
 MainActivity → SubActivity2 → … → SubActivity3_1 → SubActivity3_1_1  → …
 
 <img src="https://github.com/VIP-Projects/V-Fit-App/assets/53934639/3c10f207-6c12-44fe-98e3-224c8dd3461a" style="width:600px">
