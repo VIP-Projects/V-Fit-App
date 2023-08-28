@@ -2,7 +2,9 @@ package com.example.vfitapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.content.ContentResolver;
 import android.database.Cursor;
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,7 +14,13 @@ import android.widget.Button;
 import android.provider.MediaStore;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.ImageView;
 import android.widget.Toast;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+
 
 public class SubActivity3 extends AppCompatActivity {
 
@@ -23,6 +31,7 @@ public class SubActivity3 extends AppCompatActivity {
 
         Button useruploadbtn = findViewById(R.id.userupload);   // 사용자 이미지 업로드 버튼
         ImageButton nextbtn1 = findViewById(R.id.nextbtn1);     // 다음페이지로 넘어가는 버튼
+
 
 
         useruploadbtn.setOnClickListener(new View.OnClickListener() {   // 사용자 이미지 업로드 클릭 시 갤러리 이동
@@ -45,18 +54,29 @@ public class SubActivity3 extends AppCompatActivity {
     }
 
     // 갤러리에서 이미지 경로 받아오는 함수
+    // https://o-s-z.tistory.com/60
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         TextView userpath = findViewById(R.id.userpath);
-        switch(requestCode) {
-            case 1:
+//        ImageView userexample  = findViewById(R.id.userexample);    // 이미지 뷰
+        if (requestCode==1) {
                 if (resultCode == RESULT_OK) {
                     Uri uri = data.getData();
-                    String userimagePath = getRealPathFromURI(uri);     // imagePath에 string으로 경로 저장
-                    userpath.setText(userimagePath);              // textview에 경로 나타냄
+                    try{
+                        ContentResolver resolver = getContentResolver();
+                        InputStream instream = resolver.openInputStream(uri);
+                        Bitmap imgBitmap = BitmapFactory.decodeStream(instream);
+//                        userexample.setImageBitmap(imgBitmap);    // 선택한 이미지 이미지뷰에 셋
+                        instream.close();   // 스트림 닫아주기
+//                        String userimagePath = getRealPathFromURI(uri);     // imagePath에 string으로 경로 저장
+//                        userpath.setText(userimagePath);
+                        userpath.setText("Successful Upload of File");
+                    } catch (Exception e){
+                        userpath.setText("Failed to Upload File");
+                    }
                 }
-                break;
+
         }
     }
 

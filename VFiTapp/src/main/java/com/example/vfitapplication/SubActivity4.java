@@ -2,15 +2,25 @@ package com.example.vfitapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.content.ContentResolver;
 import android.database.Cursor;
-import android.net.Uri;
+import android.content.Intent;
 import android.os.Bundle;
-import android.provider.MediaStore;
+import android.net.Uri;
 import android.view.View;
 import android.widget.Button;
+import android.provider.MediaStore;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.ImageView;
+import android.widget.Toast;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+
 
 public class SubActivity4 extends AppCompatActivity {
 
@@ -47,14 +57,23 @@ public class SubActivity4 extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         TextView userpath = findViewById(R.id.userpath);
-        switch(requestCode) {
-            case 1:
-                if (resultCode == RESULT_OK) {
-                    Uri uri = data.getData();
-                    String userimagePath = getRealPathFromURI(uri);     // imagePath에 string으로 경로 저장
-                    userpath.setText(userimagePath);              // textview에 경로 나타냄
+
+        if (requestCode==1) {
+            if (resultCode == RESULT_OK) {
+                Uri uri = data.getData();
+                try{
+                    ContentResolver resolver = getContentResolver();
+                    InputStream instream = resolver.openInputStream(uri);
+                    Bitmap imgBitmap = BitmapFactory.decodeStream(instream);
+                    instream.close();   // 스트림 닫아주기
+//                        String userimagePath = getRealPathFromURI(uri);     // imagePath에 string으로 경로 저장
+//                        userpath.setText(userimagePath);              // textview에 경로 나타냄
+                    userpath.setText("Successful Upload of File");
+                } catch (Exception e){
+                    userpath.setText("Failed to Upload file");
                 }
-                break;
+            }
+
         }
     }
 

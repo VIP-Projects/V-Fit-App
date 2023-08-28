@@ -28,15 +28,15 @@ public class SubActivity3_1_2 extends AppCompatActivity {
         recommend3.setImageResource(R.drawable.cloth3);
         recommend4.setImageResource(R.drawable.cloth4);
         recommend5.setImageResource(R.drawable.cloth5);
-        recommend6.setImageResource(R.drawable.cloth2);
-        recommend7.setImageResource(R.drawable.cloth3);
-        recommend8.setImageResource(R.drawable.cloth4);
+        recommend6.setImageResource(R.drawable.cloth6);
+        recommend7.setImageResource(R.drawable.cloth7);
+        recommend8.setImageResource(R.drawable.cloth8);
 
 
         recommend1.setOnClickListener(new View.OnClickListener() {    // 다음페이지로 넘어가는 버튼
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), SubActivity3_1_1.class);
+                Intent intent = new Intent(getApplicationContext(), SubActivity3_1.class);
                 startActivity(intent);
 
             }
@@ -44,7 +44,7 @@ public class SubActivity3_1_2 extends AppCompatActivity {
         recommend2.setOnClickListener(new View.OnClickListener() {    // 다음페이지로 넘어가는 버튼
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), SubActivity3_1_1.class);
+                Intent intent = new Intent(getApplicationContext(), SubActivity3_1.class);
                 startActivity(intent);
 
             }
@@ -52,7 +52,7 @@ public class SubActivity3_1_2 extends AppCompatActivity {
         recommend3.setOnClickListener(new View.OnClickListener() {    // 다음페이지로 넘어가는 버튼
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), SubActivity3_1_1.class);
+                Intent intent = new Intent(getApplicationContext(), SubActivity3_1.class);
                 startActivity(intent);
 
             }
@@ -60,7 +60,7 @@ public class SubActivity3_1_2 extends AppCompatActivity {
         recommend4.setOnClickListener(new View.OnClickListener() {    // 다음페이지로 넘어가는 버튼
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), SubActivity3_1_1.class);
+                Intent intent = new Intent(getApplicationContext(), SubActivity3_1.class);
                 startActivity(intent);
 
             }
@@ -68,7 +68,7 @@ public class SubActivity3_1_2 extends AppCompatActivity {
         recommend5.setOnClickListener(new View.OnClickListener() {    // 다음페이지로 넘어가는 버튼
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), SubActivity3_1_1.class);
+                Intent intent = new Intent(getApplicationContext(), SubActivity3_1.class);
                 startActivity(intent);
 
             }
@@ -76,7 +76,7 @@ public class SubActivity3_1_2 extends AppCompatActivity {
         recommend6.setOnClickListener(new View.OnClickListener() {    // 다음페이지로 넘어가는 버튼
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), SubActivity3_1_1.class);
+                Intent intent = new Intent(getApplicationContext(), SubActivity3_1.class);
                 startActivity(intent);
 
             }
@@ -84,7 +84,7 @@ public class SubActivity3_1_2 extends AppCompatActivity {
         recommend7.setOnClickListener(new View.OnClickListener() {    // 다음페이지로 넘어가는 버튼
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), SubActivity3_1_1.class);
+                Intent intent = new Intent(getApplicationContext(), SubActivity3_1.class);
                 startActivity(intent);
 
             }
@@ -92,7 +92,7 @@ public class SubActivity3_1_2 extends AppCompatActivity {
         recommend8.setOnClickListener(new View.OnClickListener() {    // 다음페이지로 넘어가는 버튼
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), SubActivity3_1_1.class);
+                Intent intent = new Intent(getApplicationContext(), SubActivity3_1.class);
                 startActivity(intent);
 
             }
