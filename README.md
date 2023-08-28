@@ -12,8 +12,8 @@
 - <b>layout</b> : VFiTapp/src/main/res/layout
 - <b>img 저장 경로</b> : VFiTapp/src/main/res/drawable <br>
 
-※ 가상피팅 결과물은 ./res/drawble 디렉토리에 저장해야 함. <br>
-※ 옷 결과물은 ./res/drawble 디렉토리에 저장해야 함.
+<!-- ※ 가상피팅 결과물은 ./res/drawble 디렉토리에 저장해야 함. <br>
+※ 옷 결과물은 ./res/drawble 디렉토리에 저장해야 함. -->
   
 <br>
 
@@ -28,26 +28,39 @@
 <br>
 
 - <b>userimagePatch</b> : string으로 디바이스 내 이미지 절대 경로 저장. <br>
-- <b>userpath</b> : 화면에 경로 나타내기 위해 사용되는 변수. <br>
+- <b>Bitmap imgBitmap</b> : 갤러리에서 가져온 비트맵 형식의 이미지 파일 <br>
+
+<!-- - <b>userpath</b> : 화면에 경로 나타내기 위해 사용되는 변수. <br> -->
 
 ```
 # .java file
 
 // 갤러리에서 이미지 경로 받아오는 함수
-  @Override
-  protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-      super.onActivityResult(requestCode, resultCode, data);
-      TextView userpath = findViewById(R.id.userpath);
-      switch(requestCode) {
-          case 1:
-              if (resultCode == RESULT_OK) {
-                  Uri uri = data.getData();
-                  String userimagePath = getRealPathFromURI(uri);     // imagePath에 string으로 경로 저장
-                  userpath.setText(userimagePath);              // textview에 경로 나타냄
-              }
-              break;
-      }
-  }
+    // https://o-s-z.tistory.com/60
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        TextView userpath = findViewById(R.id.userpath);
+//        ImageView userexample  = findViewById(R.id.userexample);    // 이미지 뷰
+        if (requestCode==1) {
+                if (resultCode == RESULT_OK) {
+                    Uri uri = data.getData();
+                    try{
+                        ContentResolver resolver = getContentResolver();
+                        InputStream instream = resolver.openInputStream(uri);
+                        Bitmap imgBitmap = BitmapFactory.decodeStream(instream);
+//                        userexample.setImageBitmap(imgBitmap);    // 선택한 이미지 이미지뷰에 셋
+                        instream.close();   // 스트림 닫아주기
+//                        String userimagePath = getRealPathFromURI(uri);     // imagePath에 string으로 경로 저장
+//                        userpath.setText(userimagePath);
+                        userpath.setText("Successful Upload of File");
+                    } catch (Exception e){
+                        userpath.setText("Failed to Upload File");
+                    }
+                }
+
+        }
+    }
 ```
 
 ### 2) 가상 피팅 결과 제시
