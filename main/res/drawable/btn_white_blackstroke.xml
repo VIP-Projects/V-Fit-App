@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:shape="rectangle">
+
+    <solid android:color="@color/white"/> <!-- 배경 색-->
+    <stroke
+        android:width="1dp"
+        android:color="@color/white" /> <!-- 선색 -->
+
+    <corners
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"/> <!-- 선 휘는 각도 -->
+
+</shape>
+
+
+<!-- 참고:
+https://velog.io/@raaang/Android-Studio-%EB%B2%84%ED%8A%BC-background-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0-->
