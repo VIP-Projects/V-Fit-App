@@ -17,7 +17,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/white" />
 
     <ImageView
@@ -31,51 +31,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/alert_dark_frame" />
 
-    <TextView
-        android:id="@+id/textMani"
-        android:layout_width="300dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="600dp"
-        android:gravity="center"
-        android:text="manipulation_strength"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textTarget"
-        android:layout_width="300dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="564dp"
-        android:gravity="center"
-        android:text="target"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textNeutral"
-        android:layout_width="300dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="528dp"
-        android:fontFamily="sans-serif"
-        android:gravity="center"
-        android:text="neutral"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView2"
@@ -92,5 +47,84 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="125dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="52dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="touch"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.926"
+        app:layout_constraintStart_toStartOf="parent" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/hairUserImage"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:gravity="center"-->
+<!--        android:text="User Image"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textSize="15sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/btn2first"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.495"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.793" />-->
+
+    <!--    <TextView-->
+<!--        android:id="@+id/textMani"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:gravity="center"-->
+<!--        android:text="manipulation_strength"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textSize="15sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/btn2first"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.495"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.977" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textTarget"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:gravity="center"-->
+<!--        android:text="target"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textSize="15sp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/textMani"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.495"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textNeutral" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textNeutral"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:fontFamily="sans-serif"-->
+<!--        android:gravity="center"-->
+<!--        android:text="neutral"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textSize="15sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/btn2first"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.495"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/hairUserImage"-->
+<!--        app:layout_constraintVertical_bias="0.146" />-->
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
