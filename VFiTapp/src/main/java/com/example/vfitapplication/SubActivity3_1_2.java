@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -68,6 +69,12 @@ public class SubActivity3_1_2 extends AppCompatActivity {
         recommend7.setImageResource(R.drawable.cloth7);
         recommend8.setImageResource(R.drawable.cloth8);
 
+        ProgressDialog customProgressDialog;
+        //로딩창 객체 생성
+        customProgressDialog = new ProgressDialog(this);
+        //로딩창을 투명하게
+        customProgressDialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+
         // SubActivity3의 유저 이미지 불러와서 넘김
         Intent intent = getIntent();
         userimage = intent.getStringExtra("UserImage").toString();
@@ -75,6 +82,8 @@ public class SubActivity3_1_2 extends AppCompatActivity {
         recommend1.setOnClickListener(new View.OnClickListener() {    // 다음페이지로 넘어가는 버튼
             @Override
             public void onClick(View view) {
+                // 로딩창 보여주기
+                customProgressDialog.show();
                 // 추천 옷 3_1로 넘김
                 imgBitmap = BitmapFactory.decodeResource(getApplicationContext().getResources(), R.drawable.cloth1);
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
@@ -100,6 +109,8 @@ public class SubActivity3_1_2 extends AppCompatActivity {
         recommend2.setOnClickListener(new View.OnClickListener() {    // 다음페이지로 넘어가는 버튼
             @Override
             public void onClick(View view) {
+                // 로딩창 보여주기
+                customProgressDialog.show();
                 // 추천 옷 3_1로 넘김
                 imgBitmap = BitmapFactory.decodeResource(getApplicationContext().getResources(), R.drawable.cloth2);
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
@@ -126,6 +137,8 @@ public class SubActivity3_1_2 extends AppCompatActivity {
         recommend3.setOnClickListener(new View.OnClickListener() {    // 다음페이지로 넘어가는 버튼
             @Override
             public void onClick(View view) {
+                // 로딩창 보여주기
+                customProgressDialog.show();
                 // 추천 옷 3_1로 넘김
                 imgBitmap = BitmapFactory.decodeResource(getApplicationContext().getResources(), R.drawable.cloth3);
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
@@ -152,6 +165,8 @@ public class SubActivity3_1_2 extends AppCompatActivity {
         recommend4.setOnClickListener(new View.OnClickListener() {    // 다음페이지로 넘어가는 버튼
             @Override
             public void onClick(View view) {
+                // 로딩창 보여주기
+                customProgressDialog.show();
                 // 추천 옷 3_1로 넘김
                 imgBitmap = BitmapFactory.decodeResource(getApplicationContext().getResources(), R.drawable.cloth4);
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
@@ -178,6 +193,8 @@ public class SubActivity3_1_2 extends AppCompatActivity {
         recommend5.setOnClickListener(new View.OnClickListener() {    // 다음페이지로 넘어가는 버튼
             @Override
             public void onClick(View view) {
+                // 로딩창 보여주기
+                customProgressDialog.show();
                 // 추천 옷 3_1로 넘김
                 imgBitmap = BitmapFactory.decodeResource(getApplicationContext().getResources(), R.drawable.cloth5);
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
@@ -204,6 +221,8 @@ public class SubActivity3_1_2 extends AppCompatActivity {
         recommend6.setOnClickListener(new View.OnClickListener() {    // 다음페이지로 넘어가는 버튼
             @Override
             public void onClick(View view) {
+                // 로딩창 보여주기
+                customProgressDialog.show();
                 // 추천 옷 3_1로 넘김
                 imgBitmap = BitmapFactory.decodeResource(getApplicationContext().getResources(), R.drawable.cloth6);
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
@@ -230,6 +249,8 @@ public class SubActivity3_1_2 extends AppCompatActivity {
         recommend7.setOnClickListener(new View.OnClickListener() {    // 다음페이지로 넘어가는 버튼
             @Override
             public void onClick(View view) {
+                // 로딩창 보여주기
+                customProgressDialog.show();
                 // 추천 옷 3_1로 넘김
                 imgBitmap = BitmapFactory.decodeResource(getApplicationContext().getResources(), R.drawable.cloth7);
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
@@ -256,6 +277,8 @@ public class SubActivity3_1_2 extends AppCompatActivity {
         recommend8.setOnClickListener(new View.OnClickListener() {    // 다음페이지로 넘어가는 버튼
             @Override
             public void onClick(View view) {
+                // 로딩창 보여주기
+                customProgressDialog.show();
                 // 추천 옷 3_1로 넘김
                 imgBitmap = BitmapFactory.decodeResource(getApplicationContext().getResources(), R.drawable.cloth8);
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
