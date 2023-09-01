@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RadioButton;
-
+import android.graphics.drawable.ColorDrawable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import org.json.JSONException;
@@ -62,11 +62,19 @@ public class SubActivity4_1 extends AppCompatActivity {
         Intent intent = getIntent();
         userimage = intent.getStringExtra("UserImage").toString();  // 유저 이미지
 
+        ProgressDialog customProgressDialog;
+        //로딩창 객체 생성
+        customProgressDialog = new ProgressDialog(this);
+        //로딩창을 투명하게
+        customProgressDialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+
 
         // HairStyle text
         fringebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // 로딩창 보여주기
+                customProgressDialog.show();
                 neutral_fringe = "face with hair";
                 target_fringe = "face with fringe hair";
                 mani_fringe = "4.1";
@@ -86,6 +94,8 @@ public class SubActivity4_1 extends AppCompatActivity {
         shortbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // 로딩창 보여주기
+                customProgressDialog.show();
                 neutral_fringe = "face with hair";
                 target_fringe = "face with short hair";
                 mani_fringe = "7.5";
@@ -105,6 +115,8 @@ public class SubActivity4_1 extends AppCompatActivity {
         longbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // 로딩창 보여주기
+                customProgressDialog.show();
                 neutral_fringe = "face with hair";
                 target_fringe = "face with long hair";
                 mani_fringe = "4.1";
@@ -124,6 +136,8 @@ public class SubActivity4_1 extends AppCompatActivity {
         straightbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // 로딩창 보여주기
+                customProgressDialog.show();
                 neutral_fringe = "face with hair";
                 target_fringe = "face with straight hair";
                 mani_fringe = "7.5";
@@ -143,6 +157,8 @@ public class SubActivity4_1 extends AppCompatActivity {
         curlybtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // 로딩창 보여주기
+                customProgressDialog.show();
                 neutral_fringe = "face with hair";
                 target_fringe = "face with curly hairstyle";
                 mani_fringe = "4.1";
@@ -162,6 +178,8 @@ public class SubActivity4_1 extends AppCompatActivity {
         afrobtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // 로딩창 보여주기
+                customProgressDialog.show();
                 neutral_fringe = "face with hair";
                 target_fringe = "face with afro hairstyle";
                 mani_fringe = "7.5";
@@ -181,6 +199,8 @@ public class SubActivity4_1 extends AppCompatActivity {
         hitopbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // 로딩창 보여주기
+                customProgressDialog.show();
                 neutral_fringe = "face with hair";
                 target_fringe = "face with hi-top fade hair";
                 mani_fringe = "7.5";
@@ -200,6 +220,8 @@ public class SubActivity4_1 extends AppCompatActivity {
         mohawkbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // 로딩창 보여주기
+                customProgressDialog.show();
                 neutral_fringe = "face with hair";
                 target_fringe = "face with mohawk hairstyle";
                 mani_fringe = "7.5";
@@ -219,6 +241,8 @@ public class SubActivity4_1 extends AppCompatActivity {
         baldbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // 로딩창 보여주기
+                customProgressDialog.show();
                 neutral_fringe = "face with hair";
                 target_fringe = "face with bald";
                 mani_fringe = "7.5";
@@ -240,6 +264,8 @@ public class SubActivity4_1 extends AppCompatActivity {
         blondbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // 로딩창 보여주기
+                customProgressDialog.show();
                 neutral_fringe = "face with hair";
                 target_fringe = "face with blonde hair";
                 mani_fringe = "7.5";
@@ -259,6 +285,8 @@ public class SubActivity4_1 extends AppCompatActivity {
         redbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // 로딩창 보여주기
+                customProgressDialog.show();
                 neutral_fringe = "face with hair";
                 target_fringe = "face with red hair";
                 mani_fringe = "7.5";
@@ -278,6 +306,8 @@ public class SubActivity4_1 extends AppCompatActivity {
         bluebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // 로딩창 보여주기
+                customProgressDialog.show();
                 neutral_fringe = "face with hair";
                 target_fringe = "face with blue hair";
                 mani_fringe = "7.5";
@@ -297,6 +327,8 @@ public class SubActivity4_1 extends AppCompatActivity {
         whitebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // 로딩창 보여주기
+                customProgressDialog.show();
                 neutral_fringe = "face with hair";
                 target_fringe = "face with white hair";
                 mani_fringe = "7.5";
@@ -316,6 +348,8 @@ public class SubActivity4_1 extends AppCompatActivity {
         blackbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // 로딩창 보여주기
+                customProgressDialog.show();
                 neutral_fringe = "face with hair";
                 target_fringe = "face with black hair";
                 mani_fringe = "7.5";
@@ -335,6 +369,8 @@ public class SubActivity4_1 extends AppCompatActivity {
         greybtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // 로딩창 보여주기
+                customProgressDialog.show();
                 neutral_fringe = "face with hair";
                 target_fringe = "face with grey hair";
                 mani_fringe = "7.5";

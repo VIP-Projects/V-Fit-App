@@ -45,7 +45,7 @@ import android.widget.ImageView;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import androidx.core.content.res.ResourcesCompat;
-
+import android.graphics.drawable.ColorDrawable;
 import android.os.Handler;
 
 public class SubActivity3_1 extends AppCompatActivity {
@@ -77,10 +77,21 @@ public class SubActivity3_1 extends AppCompatActivity {
                 startActivityForResult(intent, 1);
             }
         });
+        ProgressDialog customProgressDialog;
+
+        //로딩창 객체 생성
+        customProgressDialog = new ProgressDialog(this);
+        //로딩창을 투명하게
+        customProgressDialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+
 
         nextbtn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                // 로딩창 보여주기
+                customProgressDialog.show();
+
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
                 imgBitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream);
                 byte[] byteArray = stream.toByteArray();

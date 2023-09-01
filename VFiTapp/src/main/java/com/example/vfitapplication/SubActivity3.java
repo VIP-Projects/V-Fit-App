@@ -7,6 +7,7 @@ import android.graphics.BitmapFactory;
 import android.content.ContentResolver;
 import android.database.Cursor;
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.net.Uri;
 import android.view.View;
@@ -45,9 +46,12 @@ public class SubActivity3 extends AppCompatActivity {
             }
         });
 
+
+
         nextbtn1.setOnClickListener(new View.OnClickListener() {    // 다음페이지로 넘어가는 버튼
             @Override
             public void onClick(View view) {
+
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
                 imgBitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream);
                 byte[] byteArray = stream.toByteArray();
@@ -55,6 +59,7 @@ public class SubActivity3 extends AppCompatActivity {
 
                 Intent intent = new Intent(getApplicationContext(), SubActivity3_1.class);
                 intent.putExtra("UserImage", userimage);
+
                 startActivity(intent);
 
             }
