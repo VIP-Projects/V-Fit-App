@@ -17,12 +17,15 @@ import android.widget.TextView;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 
 
 public class SubActivity4 extends AppCompatActivity {
+    String userimage;  // 유저 이미지 저장 변수
+    Bitmap imgBitmap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +48,13 @@ public class SubActivity4 extends AppCompatActivity {
         nextbtn3.setOnClickListener(new View.OnClickListener() {    // 다음페이지로 넘어가는 버튼
             @Override
             public void onClick(View view) {
+                ByteArrayOutputStream stream = new ByteArrayOutputStream();
+                imgBitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+                byte[] byteArray = stream.toByteArray();
+                userimage = android.util.Base64.encodeToString(byteArray, android.util.Base64.DEFAULT);
+
                 Intent intent = new Intent(getApplicationContext(), SubActivity4_1.class);
+                intent.putExtra("UserImage", userimage);
                 startActivity(intent);
 
             }
@@ -64,10 +73,11 @@ public class SubActivity4 extends AppCompatActivity {
                 try{
                     ContentResolver resolver = getContentResolver();
                     InputStream instream = resolver.openInputStream(uri);
-                    Bitmap imgBitmap = BitmapFactory.decodeStream(instream);
+                    imgBitmap = BitmapFactory.decodeStream(instream);
                     instream.close();   // 스트림 닫아주기
-//                        String userimagePath = getRealPathFromURI(uri);     // imagePath에 string으로 경로 저장
-//                        userpath.setText(userimagePath);              // textview에 경로 나타냄
+
+                    //UserImagePath = getRealPathFromURI(uri);     // imagePath에 string으로 경로 저장
+
                     userpath.setText("Successful Upload of File");
                 } catch (Exception e){
                     userpath.setText("Failed to Upload file");
