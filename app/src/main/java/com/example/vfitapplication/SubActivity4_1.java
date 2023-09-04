@@ -163,7 +163,7 @@ public class SubActivity4_1 extends AppCompatActivity {
                 customProgressDialog.show();
                 neutral_fringe = "face with hair";              // 원래 이미지
                 target_fringe = "face with curly hairstyle";    // 목표 이미지
-                mani_fringe = "4.1";                            // 변환 강도
+                mani_fringe = "3.5";                            // 변환 강도
                 Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);     // 헤어 피팅 결과 출력 위해 결과 페이지 불러옴 
 
                 sendServer();
