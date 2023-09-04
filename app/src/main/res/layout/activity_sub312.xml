@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubActivity3_1_2">
+
+    <ImageButton
+        android:id="@+id/recommend1"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="fitCenter"
+        android:background="@drawable/btn_white_blackstroke"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <ImageButton
+        android:id="@+id/recommend2"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="50dp"
+        android:scaleType="fitCenter"
+        android:background="@drawable/btn_white_blackstroke"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <ImageButton
+        android:id="@+id/recommend3"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="175dp"
+        android:scaleType="fitCenter"
+        android:background="@drawable/btn_white_blackstroke"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <ImageButton
+        android:id="@+id/recommend4"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="175dp"
+        android:layout_marginEnd="48dp"
+        android:scaleType="fitCenter"
+        android:background="@drawable/btn_white_blackstroke"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <ImageButton
+        android:id="@+id/recommend5"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="335dp"
+        android:scaleType="fitCenter"
+        android:background="@drawable/btn_white_blackstroke"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <ImageButton
+        android:id="@+id/recommend6"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="335dp"
+        android:layout_marginEnd="50dp"
+        android:scaleType="fitCenter"
+        android:background="@drawable/btn_white_blackstroke"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <ImageButton
+        android:id="@+id/recommend7"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="495dp"
+        android:scaleType="fitCenter"
+        android:background="@drawable/btn_white_blackstroke"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <ImageButton
+        android:id="@+id/recommend8"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="495dp"
+        android:layout_marginEnd="50dp"
+        android:scaleType="fitCenter"
+        android:background="@drawable/btn_white_blackstroke"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

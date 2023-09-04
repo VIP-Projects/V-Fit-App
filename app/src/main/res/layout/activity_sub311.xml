@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubActivity3_1_1">
+
+
+    <ImageButton
+        android:id="@+id/imagebtn2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/white" />
+
+    <ImageView
+        android:id="@+id/vfit_result"
+        android:layout_width="368dp"
+        android:layout_height="520dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/alert_dark_frame" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="355dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="의상 피팅 결과"
+        android:background="#000000"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/textUserImage"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginTop="528dp"-->
+<!--        android:fontFamily="sans-serif"-->
+<!--        android:gravity="center"-->
+<!--        android:text="User Image"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textSize="15sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.495"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/textCloth"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginTop="564dp"-->
+<!--        android:gravity="center"-->
+<!--        android:text="Cloth Image Path"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textSize="15sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.495"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_white_blackstroke"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
