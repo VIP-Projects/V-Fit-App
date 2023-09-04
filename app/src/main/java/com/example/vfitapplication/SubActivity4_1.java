@@ -40,23 +40,23 @@ public class SubActivity4_1 extends AppCompatActivity {
         setContentView(R.layout.activity_sub41);
 
         // HairStyle button
-        Button fringebtn = findViewById(R.id.fringebtn);
-        Button shortbtn = findViewById(R.id.shortbtn);
-        Button longbtn =  findViewById(R.id.longbtn);
-        Button straightbtn =  findViewById(R.id.straightbtn);
-        Button curlybtn =  findViewById(R.id.curlybtn);
-        Button afrobtn =  findViewById(R.id.afrobtn);
-        Button hitopbtn =  findViewById(R.id.hitopbtn);
-        Button mohawkbtn = findViewById(R.id.mohawkbtn);
-        Button baldbtn =  findViewById(R.id.baldbtn);
+        Button fringebtn = findViewById(R.id.fringebtn);      // 앞머리 버튼
+        Button shortbtn = findViewById(R.id.shortbtn);        // 단발머리 버튼
+        Button longbtn =  findViewById(R.id.longbtn);         // 긴머리 버튼
+        Button straightbtn =  findViewById(R.id.straightbtn); // 곧은머리 버튼
+        Button curlybtn =  findViewById(R.id.curlybtn);       // 웨이브 버튼
+        Button afrobtn =  findViewById(R.id.afrobtn);         // 곱슬머리 버튼
+        Button hitopbtn =  findViewById(R.id.hitopbtn);       // 투블럭 버튼
+        Button mohawkbtn = findViewById(R.id.mohawkbtn);      // 모히칸 버튼
+        Button baldbtn =  findViewById(R.id.baldbtn);         // 대머리 버튼
 
         // HairColor button
-        RadioButton blondbtn = findViewById(R.id.blondbtn);
-        RadioButton redbtn =  findViewById(R.id.redbtn);
-        RadioButton bluebtn = findViewById(R.id.bluebtn);
-        RadioButton whitebtn = findViewById(R.id.whitebtn);
-        RadioButton blackbtn = findViewById(R.id.blackbtn);
-        RadioButton greybtn = findViewById(R.id.greybtn);
+        RadioButton blondbtn = findViewById(R.id.blondbtn);   // 금발머리
+        RadioButton redbtn =  findViewById(R.id.redbtn);      // 빨간머리
+        RadioButton bluebtn = findViewById(R.id.bluebtn);     // 파란머리
+        RadioButton whitebtn = findViewById(R.id.whitebtn);   // 흰머리
+        RadioButton blackbtn = findViewById(R.id.blackbtn);   // 검은머리
+        RadioButton greybtn = findViewById(R.id.greybtn);     // 회색머리리
 
         // SubActivity4의 유저 이미지 불러와서 넘김
         Intent intent = getIntent();
