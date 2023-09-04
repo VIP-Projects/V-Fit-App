@@ -56,7 +56,7 @@ public class SubActivity4_1 extends AppCompatActivity {
         RadioButton bluebtn = findViewById(R.id.bluebtn);     // 파란머리
         RadioButton whitebtn = findViewById(R.id.whitebtn);   // 흰머리
         RadioButton blackbtn = findViewById(R.id.blackbtn);   // 검은머리
-        RadioButton greybtn = findViewById(R.id.greybtn);     // 회색머리리
+        RadioButton greybtn = findViewById(R.id.greybtn);     // 회색머리
 
         // SubActivity4의 유저 이미지 불러와서 넘김
         Intent intent = getIntent();
