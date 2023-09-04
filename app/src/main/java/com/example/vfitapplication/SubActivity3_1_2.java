@@ -98,7 +98,7 @@ public class SubActivity3_1_2 extends AppCompatActivity {
                 new Handler().postDelayed(new Runnable(){
                     @Override
                     public void run(){
-                        intent.putExtra("resultImage", resultimage);  // 유저 이미지
+                        intent.putExtra("resultImage", resultimage);  // 결과 이미지
                         startActivity(intent);
                         Log.v("hello", "hello : " + 2);
                     }
@@ -125,7 +125,7 @@ public class SubActivity3_1_2 extends AppCompatActivity {
                 new Handler().postDelayed(new Runnable(){
                     @Override
                     public void run(){
-                        intent.putExtra("resultImage", resultimage);  // 유저 이미지
+                        intent.putExtra("resultImage", resultimage);  // 결과과 이미지
                         startActivity(intent);
                         Log.v("hello", "hello : " + 2);
                     }
@@ -153,7 +153,7 @@ public class SubActivity3_1_2 extends AppCompatActivity {
                 new Handler().postDelayed(new Runnable(){
                     @Override
                     public void run(){
-                        intent.putExtra("resultImage", resultimage);  // 유저 이미지
+                        intent.putExtra("resultImage", resultimage);  // 결과과 이미지
                         startActivity(intent);
                         Log.v("hello", "hello : " + 2);
                     }
@@ -181,7 +181,7 @@ public class SubActivity3_1_2 extends AppCompatActivity {
                 new Handler().postDelayed(new Runnable(){
                     @Override
                     public void run(){
-                        intent.putExtra("resultImage", resultimage);  // 유저 이미지
+                        intent.putExtra("resultImage", resultimage);  // 결과 이미지
                         startActivity(intent);
                         Log.v("hello", "hello : " + 2);
                     }
@@ -209,7 +209,7 @@ public class SubActivity3_1_2 extends AppCompatActivity {
                 new Handler().postDelayed(new Runnable(){
                     @Override
                     public void run(){
-                        intent.putExtra("resultImage", resultimage);  // 유저 이미지
+                        intent.putExtra("resultImage", resultimage);  // 결과과 이미지
                         startActivity(intent);
                         Log.v("hello", "hello : " + 2);
                     }
@@ -237,7 +237,7 @@ public class SubActivity3_1_2 extends AppCompatActivity {
                 new Handler().postDelayed(new Runnable(){
                     @Override
                     public void run(){
-                        intent.putExtra("resultImage", resultimage);  // 유저 이미지
+                        intent.putExtra("resultImage", resultimage);  // 결과과 이미지
                         startActivity(intent);
                         Log.v("hello", "hello : " + 2);
                     }
@@ -264,7 +264,7 @@ public class SubActivity3_1_2 extends AppCompatActivity {
                 new Handler().postDelayed(new Runnable(){
                     @Override
                     public void run(){
-                        intent.putExtra("resultImage", resultimage);  // 유저 이미지
+                        intent.putExtra("resultImage", resultimage);  // 결과과 이미지
                         startActivity(intent);
                         Log.v("hello", "hello : " + 2);
                     }
@@ -292,7 +292,7 @@ public class SubActivity3_1_2 extends AppCompatActivity {
                 new Handler().postDelayed(new Runnable(){
                     @Override
                     public void run(){
-                        intent.putExtra("resultImage", resultimage);  // 유저 이미지
+                        intent.putExtra("resultImage", resultimage);  // 결과과 이미지
                         startActivity(intent);
                         Log.v("hello", "hello : " + 2);
                     }
