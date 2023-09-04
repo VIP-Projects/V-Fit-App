@@ -17,25 +17,18 @@ public class SubActivity4_2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sub42);
 
-        ImageView vfit_hair_result = findViewById(R.id.vfit_hair_result);
-//        TextView hairUserImage = findViewById(R.id.hairUserImage);  // 유저 이미지
-//        TextView textNeutral = findViewById(R.id.textNeutral);  // 옵션1
-//        TextView textTarget =  findViewById(R.id.textTarget);  // 옵션2
-//        TextView textMani = findViewById(R.id.textMani);  // 옵션3
-        ImageButton btn2first = findViewById(R.id.btn2first);
+        ImageView vfit_hair_result = findViewById(R.id.vfit_hair_result);    // 헤어 피팅 결과 출력
+        ImageButton btn2first = findViewById(R.id.btn2first);                // 화면 전체가 다음 페이지로 이동할 수 있는 이미지 버튼
         Intent intent = getIntent();
 
         vfit_hair_result.setImageResource(R.drawable.iu_hair);
-        //hairUserImage.setText(intent.getStringExtra("UserImage").toString());  // 유저 이미지
-//        textNeutral.setText(intent.getStringExtra("Neutral").toString());
-//        textTarget.setText(intent.getStringExtra("Target").toString());
-//        textMani.setText(intent.getStringExtra("Manipulation").toString());
 
         String resultimage = intent.getStringExtra("resultImage").toString();
         byte[] encodeByte = android.util.Base64.decode(resultimage, android.util.Base64.DEFAULT);
         Bitmap result_bitmap = BitmapFactory.decodeByteArray(encodeByte, 0, encodeByte.length);
         vfit_hair_result.setImageBitmap(result_bitmap);
 
+        // 화면 어느 곳이든, 클릭 시 다음 페이지로 이동
         btn2first.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
