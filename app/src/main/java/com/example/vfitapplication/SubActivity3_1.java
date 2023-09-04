@@ -69,7 +69,8 @@ public class SubActivity3_1 extends AppCompatActivity {
         Intent intent = getIntent();
         userimage = intent.getStringExtra("UserImage").toString();
 
-        clothuploadbtn.setOnClickListener(new View.OnClickListener() {   // 의상 이미지 업로드 클릭 시 갤러리 이동
+         // 의상 이미지 업로드 클릭 시 갤러리 이동
+        clothuploadbtn.setOnClickListener(new View.OnClickListener() {  
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_PICK);
@@ -91,25 +92,24 @@ public class SubActivity3_1 extends AppCompatActivity {
 
                 // 로딩창 보여주기
                 customProgressDialog.show();
-
+                
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
                 imgBitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream);
                 byte[] byteArray = stream.toByteArray();
                 clothimage = android.util.Base64.encodeToString(byteArray, android.util.Base64.DEFAULT);
 
-                Intent intent = new Intent(getApplicationContext(), SubActivity3_1_1.class);
+                Intent intent = new Intent(getApplicationContext(), SubActivity3_1_1.class);    // 의상 피팅 결과 출력 위해 결과 페이지 불러옴
                 Log.v("hello", "hello : " + 1);
                 sendServer();
                 new Handler().postDelayed(new Runnable(){
                     @Override
                     public void run(){
-                        intent.putExtra("resultImage", resultimage);  // 유저 이미지
+                        intent.putExtra("resultImage", resultimage);  // 의상 피팅 결과 이미지
                         startActivity(intent);
                         Log.v("hello", "hello : " + 2);
                     }
                 }, 10000);
-//                intent.putExtra("resultImage", resultimage);  // 유저 이미지
-//                startActivity(intent);
+
             }
         });
 
@@ -122,6 +122,7 @@ public class SubActivity3_1 extends AppCompatActivity {
             }
         });
     }
+    
     // 갤러리에서 이미지 경로 받아오는 함수
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -136,40 +137,15 @@ public class SubActivity3_1 extends AppCompatActivity {
                     InputStream instream = resolver.openInputStream(uri);
                     imgBitmap = BitmapFactory.decodeStream(instream);
                     instream.close();   // 스트림 닫아주기
-
-                    // imagePath에 string으로 경로 저장(확인용)
-                    //clothimagePath = getRealPathFromURI(uri);
-
-                    // 현재 페이지에 갤러리 업로드 상태 메시지 출력
-                    clothpath.setText("Successful Upload of File");
+                    clothpath.setText("Successful Upload of File");    // 현재 페이지에 갤러리 업로드 상태 메시지 출력
                 } catch (Exception e){
-                    clothpath.setText("Failed to Upload file");
+                    clothpath.setText("Failed to Upload file");    // 현재 페이지에 갤러리 업로드 상태 메시지 출력
                 }
             }
 
         }
     }
 
-//    갤러리 사진 참고: https://machine-woong.tistory.com/91 / https://jeongchul.tistory.com/287
-//    사진 url 띄우기 참고 : https://jjyloves.tistory.com/13 / https://wikidocs.net/99371
-
-
-    // 이미지의 절대 경로를 구해주는 함수 (참고: https://hhhhhhhong.tistory.com/28)
-    private String getRealPathFromURI(Uri contentURI) {
-        String result;
-        Cursor cursor = getContentResolver().query(contentURI, null, null, null, null);
-
-        if (cursor == null) { // Source is Dropbox or other similar local file path
-            result = contentURI.getPath();
-        }
-        else {
-            cursor.moveToFirst();
-            int idx = cursor.getColumnIndex(MediaStore.Images.ImageColumns.DATA);
-            result = cursor.getString(idx);
-            cursor.close();
-        }
-        return result;
-    }
 
     public void sendServer(){
         class sendData extends AsyncTask<Void, Void, String> {
