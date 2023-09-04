@@ -24,7 +24,7 @@ import java.io.InputStream;
 
 
 public class SubActivity4 extends AppCompatActivity {
-    String userimage;  // 유저 이미지 저장 변수
+    String userimage;  // 갤러리에 유저 이미지 저장 변수
     Bitmap imgBitmap;
 
     @Override
