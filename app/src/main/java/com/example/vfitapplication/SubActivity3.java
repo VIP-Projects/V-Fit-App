@@ -88,24 +88,5 @@ public class SubActivity3 extends AppCompatActivity {
         }
     }
 
-//    갤러리 사진 (참고: https://machine-woong.tistory.com/91 / https://jeongchul.tistory.com/287)
-//    사진 url 띄우기 (참고 : https://jjyloves.tistory.com/13 / https://wikidocs.net/99371)
-
-    // 이미지의 절대 경로를 구해주는 함수 (참고: https://hhhhhhhong.tistory.com/28)
-    private String getRealPathFromURI(Uri contentURI) {
-        String result;
-        Cursor cursor = getContentResolver().query(contentURI, null, null, null, null);
-
-        if (cursor == null) { // Source is Dropbox or other similar local file path
-            result = contentURI.getPath();
-        }
-        else {
-            cursor.moveToFirst();
-            int idx = cursor.getColumnIndex(MediaStore.Images.ImageColumns.DATA);
-            result = cursor.getString(idx);
-            cursor.close();
-        }
-        return result;
-    }
 }
 
