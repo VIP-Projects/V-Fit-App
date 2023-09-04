@@ -40,8 +40,8 @@ import android.os.Handler;
 public class SubActivity3_1_2 extends AppCompatActivity {
 
     private static final String url1 = "http://10.0.2.2:5000/hello";
-    String userimage;
-    String clothimage;
+    String userimage;  // 갤러리에 있는 유저 저장 변수
+    String clothimage;  // 크롤링한 옷 저장 변수
     Bitmap imgBitmap;
     String resultimage = "";
 
