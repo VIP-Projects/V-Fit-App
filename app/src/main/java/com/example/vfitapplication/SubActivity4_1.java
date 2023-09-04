@@ -75,16 +75,17 @@ public class SubActivity4_1 extends AppCompatActivity {
             public void onClick(View view) {
                 // 로딩창 보여주기
                 customProgressDialog.show();
-                neutral_fringe = "face with hair";
-                target_fringe = "face with fringe hair";
-                mani_fringe = "4.1";
-                Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);
+                
+                neutral_fringe = "face with hair";           // 원래 이미지
+                target_fringe = "face with fringe hair";    // 목표 이미지
+                mani_fringe = "4.1";                        // 변환 강도
+                Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);  // 헤어 피팅 결과 출력 위해 결과 페이지 불러옴 
 
                 sendServer();
                 new Handler().postDelayed(new Runnable(){
                     @Override
                     public void run(){
-                        intent.putExtra("resultImage", resultimage);  // 유저 이미지
+                        intent.putExtra("resultImage", resultimage);  // 헤어 피팅 결과 이미지
                         startActivity(intent);
                         Log.v("hello", "hello : " + 2);
                     }
@@ -96,16 +97,17 @@ public class SubActivity4_1 extends AppCompatActivity {
             public void onClick(View view) {
                 // 로딩창 보여주기
                 customProgressDialog.show();
-                neutral_fringe = "face with hair";
-                target_fringe = "face with short hair";
-                mani_fringe = "7.5";
-                Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);
+                
+                neutral_fringe = "face with hair";        // 원래 이미지
+                target_fringe = "face with short hair";    // 목표 이미지
+                mani_fringe = "7.5";                        // 변환 강도
+                Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);     // 헤어 피팅 결과 출력 위해 결과 페이지 불러옴 
 
                 sendServer();
                 new Handler().postDelayed(new Runnable(){
                     @Override
                     public void run(){
-                        intent.putExtra("resultImage", resultimage);  // 유저 이미지
+                        intent.putExtra("resultImage", resultimage);  // 헤어 피팅 결과 이미지
                         startActivity(intent);
                         Log.v("hello", "hello : " + 2);
                     }
@@ -117,16 +119,16 @@ public class SubActivity4_1 extends AppCompatActivity {
             public void onClick(View view) {
                 // 로딩창 보여주기
                 customProgressDialog.show();
-                neutral_fringe = "face with hair";
-                target_fringe = "face with long hair";
-                mani_fringe = "4.1";
-                Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);
+                neutral_fringe = "face with hair";        // 원래 이미지
+                target_fringe = "face with long hair";    // 목표 이미지
+                mani_fringe = "4.1";                        // 변환 강도
+                Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);     // 헤어 피팅 결과 출력 위해 결과 페이지 불러옴 
 
                 sendServer();
                 new Handler().postDelayed(new Runnable(){
                     @Override
                     public void run(){
-                        intent.putExtra("resultImage", resultimage);  // 유저 이미지
+                        intent.putExtra("resultImage", resultimage);  // 헤어 피팅 결과 이미지
                         startActivity(intent);
                         Log.v("hello", "hello : " + 2);
                     }
@@ -138,16 +140,16 @@ public class SubActivity4_1 extends AppCompatActivity {
             public void onClick(View view) {
                 // 로딩창 보여주기
                 customProgressDialog.show();
-                neutral_fringe = "face with hair";
-                target_fringe = "face with straight hair";
-                mani_fringe = "7.5";
-                Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);
+                neutral_fringe = "face with hair";        // 원래 이미지
+                target_fringe = "face with straight hair";// 목표 이미지
+                mani_fringe = "7.5";                      // 변환 강도
+                Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);     // 헤어 피팅 결과 출력 위해 결과 페이지 불러옴 
 
                 sendServer();
                 new Handler().postDelayed(new Runnable(){
                     @Override
                     public void run(){
-                        intent.putExtra("resultImage", resultimage);  // 유저 이미지
+                        intent.putExtra("resultImage", resultimage);  // 헤어 피팅 결과 이미지
                         startActivity(intent);
                         Log.v("hello", "hello : " + 2);
                     }
@@ -159,16 +161,16 @@ public class SubActivity4_1 extends AppCompatActivity {
             public void onClick(View view) {
                 // 로딩창 보여주기
                 customProgressDialog.show();
-                neutral_fringe = "face with hair";
-                target_fringe = "face with curly hairstyle";
-                mani_fringe = "4.1";
-                Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);
+                neutral_fringe = "face with hair";              // 원래 이미지
+                target_fringe = "face with curly hairstyle";    // 목표 이미지
+                mani_fringe = "4.1";                            // 변환 강도
+                Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);     // 헤어 피팅 결과 출력 위해 결과 페이지 불러옴 
 
                 sendServer();
                 new Handler().postDelayed(new Runnable(){
                     @Override
                     public void run(){
-                        intent.putExtra("resultImage", resultimage);  // 유저 이미지
+                        intent.putExtra("resultImage", resultimage);  // 헤어 피팅 결과 이미지
                         startActivity(intent);
                         Log.v("hello", "hello : " + 2);
                     }
@@ -180,16 +182,16 @@ public class SubActivity4_1 extends AppCompatActivity {
             public void onClick(View view) {
                 // 로딩창 보여주기
                 customProgressDialog.show();
-                neutral_fringe = "face with hair";
-                target_fringe = "face with afro hairstyle";
-                mani_fringe = "7.5";
-                Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);
+                neutral_fringe = "face with hair";            // 원래 이미지
+                target_fringe = "face with afro hairstyle";    // 목표 이미지
+                mani_fringe = "7.5";                            // 변환 강도
+                Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);     // 헤어 피팅 결과 출력 위해 결과 페이지 불러옴 
 
                 sendServer();
                 new Handler().postDelayed(new Runnable(){
                     @Override
                     public void run(){
-                        intent.putExtra("resultImage", resultimage);  // 유저 이미지
+                        intent.putExtra("resultImage", resultimage);  // 헤어 피팅 결과 이미지
                         startActivity(intent);
                         Log.v("hello", "hello : " + 2);
                     }
@@ -201,16 +203,16 @@ public class SubActivity4_1 extends AppCompatActivity {
             public void onClick(View view) {
                 // 로딩창 보여주기
                 customProgressDialog.show();
-                neutral_fringe = "face with hair";
-                target_fringe = "face with hi-top fade hair";
-                mani_fringe = "7.5";
-                Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);
+                neutral_fringe = "face with hair";                // 원래 이미지
+                target_fringe = "face with hi-top fade hair";    // 목표 이미지
+                mani_fringe = "7.5";                                // 변환 강도
+                Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);     // 헤어 피팅 결과 출력 위해 결과 페이지 불러옴 
 
                 sendServer();
                 new Handler().postDelayed(new Runnable(){
                     @Override
                     public void run(){
-                        intent.putExtra("resultImage", resultimage);  // 유저 이미지
+                        intent.putExtra("resultImage", resultimage);  // 헤어 피팅 결과 이미지
                         startActivity(intent);
                         Log.v("hello", "hello : " + 2);
                     }
@@ -222,16 +224,16 @@ public class SubActivity4_1 extends AppCompatActivity {
             public void onClick(View view) {
                 // 로딩창 보여주기
                 customProgressDialog.show();
-                neutral_fringe = "face with hair";
-                target_fringe = "face with mohawk hairstyle";
-                mani_fringe = "7.5";
-                Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);
+                neutral_fringe = "face with hair";                // 원래 이미지
+                target_fringe = "face with mohawk hairstyle";    // 목표 이미지
+                mani_fringe = "7.5";                            // 변환 강도
+                Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);     // 헤어 피팅 결과 출력 위해 결과 페이지 불러옴 
 
                 sendServer();
                 new Handler().postDelayed(new Runnable(){
                     @Override
                     public void run(){
-                        intent.putExtra("resultImage", resultimage);  // 유저 이미지
+                        intent.putExtra("resultImage", resultimage);  // 헤어 피팅 결과 이미지
                         startActivity(intent);
                         Log.v("hello", "hello : " + 2);
                     }
@@ -243,16 +245,16 @@ public class SubActivity4_1 extends AppCompatActivity {
             public void onClick(View view) {
                 // 로딩창 보여주기
                 customProgressDialog.show();
-                neutral_fringe = "face with hair";
-                target_fringe = "face with bald";
-                mani_fringe = "7.5";
-                Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);
+                neutral_fringe = "face with hair";        // 원래 이미지
+                target_fringe = "face with bald";        // 목표 이미지
+                mani_fringe = "7.5";                        // 변환 강도
+                Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);     // 헤어 피팅 결과 출력 위해 결과 페이지 불러옴 
 
                 sendServer();
                 new Handler().postDelayed(new Runnable(){
                     @Override
                     public void run(){
-                        intent.putExtra("resultImage", resultimage);  // 유저 이미지
+                        intent.putExtra("resultImage", resultimage);  // 헤어 피팅 결과 이미지
                         startActivity(intent);
                         Log.v("hello", "hello : " + 2);
                     }
@@ -266,16 +268,16 @@ public class SubActivity4_1 extends AppCompatActivity {
             public void onClick(View view) {
                 // 로딩창 보여주기
                 customProgressDialog.show();
-                neutral_fringe = "face with hair";
-                target_fringe = "face with blonde hair";
-                mani_fringe = "7.5";
-                Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);
+                neutral_fringe = "face with hair";        // 원래 이미지
+                target_fringe = "face with blonde hair";    // 목표 이미지
+                mani_fringe = "7.5";                        // 변환 강도
+                Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);     // 헤어 피팅 결과 출력 위해 결과 페이지 불러옴 
 
                 sendServer();
                 new Handler().postDelayed(new Runnable(){
                     @Override
                     public void run(){
-                        intent.putExtra("resultImage", resultimage);  // 유저 이미지
+                        intent.putExtra("resultImage", resultimage);  // 헤어 피팅 결과 이미지
                         startActivity(intent);
                         Log.v("hello", "hello : " + 2);
                     }
@@ -287,16 +289,16 @@ public class SubActivity4_1 extends AppCompatActivity {
             public void onClick(View view) {
                 // 로딩창 보여주기
                 customProgressDialog.show();
-                neutral_fringe = "face with hair";
-                target_fringe = "face with red hair";
-                mani_fringe = "7.5";
-                Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);
+                neutral_fringe = "face with hair";        // 원래 이미지
+                target_fringe = "face with red hair";    // 목표 이미지
+                mani_fringe = "7.5";                    // 변환 강도
+                Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);     // 헤어 피팅 결과 출력 위해 결과 페이지 불러옴 
 
                 sendServer();
                 new Handler().postDelayed(new Runnable(){
                     @Override
                     public void run(){
-                        intent.putExtra("resultImage", resultimage);  // 유저 이미지
+                        intent.putExtra("resultImage", resultimage);  // 헤어 피팅 결과 이미지
                         startActivity(intent);
                         Log.v("hello", "hello : " + 2);
                     }
@@ -308,16 +310,16 @@ public class SubActivity4_1 extends AppCompatActivity {
             public void onClick(View view) {
                 // 로딩창 보여주기
                 customProgressDialog.show();
-                neutral_fringe = "face with hair";
-                target_fringe = "face with blue hair";
-                mani_fringe = "7.5";
-                Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);
+                neutral_fringe = "face with hair";        // 원래 이미지
+                target_fringe = "face with blue hair";    // 목표 이미지
+                mani_fringe = "7.5";                        // 변환 강도
+                Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);     // 헤어 피팅 결과 출력 위해 결과 페이지 불러옴 
 
                 sendServer();
                 new Handler().postDelayed(new Runnable(){
                     @Override
                     public void run(){
-                        intent.putExtra("resultImage", resultimage);  // 유저 이미지
+                        intent.putExtra("resultImage", resultimage);  // 헤어 피팅 결과 이미지
                         startActivity(intent);
                         Log.v("hello", "hello : " + 2);
                     }
@@ -329,16 +331,16 @@ public class SubActivity4_1 extends AppCompatActivity {
             public void onClick(View view) {
                 // 로딩창 보여주기
                 customProgressDialog.show();
-                neutral_fringe = "face with hair";
-                target_fringe = "face with white hair";
-                mani_fringe = "7.5";
-                Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);
+                neutral_fringe = "face with hair";        // 원래 이미지
+                target_fringe = "face with white hair";    // 목표 이미지
+                mani_fringe = "7.5";                        // 변환 강도
+                Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);     // 헤어 피팅 결과 출력 위해 결과 페이지 불러옴 
 
                 sendServer();
                 new Handler().postDelayed(new Runnable(){
                     @Override
                     public void run(){
-                        intent.putExtra("resultImage", resultimage);  // 유저 이미지
+                        intent.putExtra("resultImage", resultimage);  // 헤어 피팅 결과 이미지
                         startActivity(intent);
                         Log.v("hello", "hello : " + 2);
                     }
@@ -350,16 +352,16 @@ public class SubActivity4_1 extends AppCompatActivity {
             public void onClick(View view) {
                 // 로딩창 보여주기
                 customProgressDialog.show();
-                neutral_fringe = "face with hair";
-                target_fringe = "face with black hair";
-                mani_fringe = "7.5";
-                Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);
+                neutral_fringe = "face with hair";        // 원래 이미지
+                target_fringe = "face with black hair";    // 목표 이미지
+                mani_fringe = "7.5";                        // 변환 강도
+                Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);     // 헤어 피팅 결과 출력 위해 결과 페이지 불러옴 
 
                 sendServer();
                 new Handler().postDelayed(new Runnable(){
                     @Override
                     public void run(){
-                        intent.putExtra("resultImage", resultimage);  // 유저 이미지
+                        intent.putExtra("resultImage", resultimage);  // 헤어 피팅 결과 이미지
                         startActivity(intent);
                         Log.v("hello", "hello : " + 2);
                     }
@@ -371,16 +373,16 @@ public class SubActivity4_1 extends AppCompatActivity {
             public void onClick(View view) {
                 // 로딩창 보여주기
                 customProgressDialog.show();
-                neutral_fringe = "face with hair";
-                target_fringe = "face with grey hair";
-                mani_fringe = "7.5";
-                Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);
+                neutral_fringe = "face with hair";        // 원래 이미지
+                target_fringe = "face with grey hair";    // 목표 이미지
+                mani_fringe = "7.5";                        // 변환 강도
+                Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);     // 헤어 피팅 결과 출력 위해 결과 페이지 불러옴 
 
                 sendServer();
                 new Handler().postDelayed(new Runnable(){
                     @Override
                     public void run(){
-                        intent.putExtra("resultImage", resultimage);  // 유저 이미지
+                        intent.putExtra("resultImage", resultimage);  // 헤어 피팅 결과 이미지
                         startActivity(intent);
                         Log.v("hello", "hello : " + 2);
                     }
