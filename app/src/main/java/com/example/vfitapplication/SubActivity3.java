@@ -77,12 +77,9 @@ public class SubActivity3 extends AppCompatActivity {
                     try{
                         ContentResolver resolver = getContentResolver();
                         InputStream instream = resolver.openInputStream(uri);
-                        imgBitmap = BitmapFactory.decodeStream(instream);
-
+                        imgBitmap = BitmapFactory.decodeStream(instream);    // 갤러리에서 받아온 이미지 비트맵으로 변환
                         instream.close();   // 스트림 닫아주기
-
-                        // 현재 페이지에 갤러리 업로드 상태 메시지 출력
-                        userpath.setText("Successful Upload of File");
+                        userpath.setText("Successful Upload of File");     // 현재 페이지에 갤러리 업로드 상태 메시지 출력
                     } catch (Exception e){
                         userpath.setText("Failed to Upload File");
                     }
