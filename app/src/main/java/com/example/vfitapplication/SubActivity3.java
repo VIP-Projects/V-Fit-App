@@ -27,17 +27,17 @@ import java.io.InputStream;
 public class SubActivity3 extends AppCompatActivity {
 
     Bitmap imgBitmap;
-    //String UserImagePath;  // 유저 이미지 저장 변수
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sub3);
 
         Button useruploadbtn = findViewById(R.id.userupload);   // 사용자 이미지 업로드 버튼
-        ImageButton nextbtn1 = findViewById(R.id.nextbtn1);     // 다음페이지로 넘어가는 버튼
+        ImageButton nextbtn1 = findViewById(R.id.nextbtn1);     // 다음 페이지로 넘어가는 버튼
 
-
-        useruploadbtn.setOnClickListener(new View.OnClickListener() {   // 사용자 이미지 업로드 클릭 시 갤러리 이동
+         // 사용자 이미지 업로드 클릭 시 갤러리 이동
+        useruploadbtn.setOnClickListener(new View.OnClickListener() {  
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_PICK);
@@ -47,8 +47,8 @@ public class SubActivity3 extends AppCompatActivity {
         });
 
 
-
-        nextbtn1.setOnClickListener(new View.OnClickListener() {    // 다음페이지로 넘어가는 버튼
+        // 다음페이지로 넘어가는 버튼
+        nextbtn1.setOnClickListener(new View.OnClickListener() {    
             @Override
             public void onClick(View view) {
 
@@ -66,13 +66,11 @@ public class SubActivity3 extends AppCompatActivity {
         });
     }
 
-    // 갤러리에서 이미지 경로 받아오는 함수
-    // https://o-s-z.tistory.com/60
+    // 갤러리에서 이미지 경로 받아오는 함수 (참고: https://o-s-z.tistory.com/60)
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         TextView userpath = findViewById(R.id.userpath);
-//        ImageView userexample  = findViewById(R.id.userexample);    // 이미지 뷰
         if (requestCode==1) {
                 if (resultCode == RESULT_OK) {
                     Uri uri = data.getData();
@@ -80,11 +78,8 @@ public class SubActivity3 extends AppCompatActivity {
                         ContentResolver resolver = getContentResolver();
                         InputStream instream = resolver.openInputStream(uri);
                         imgBitmap = BitmapFactory.decodeStream(instream);
-//                        userexample.setImageBitmap(imgBitmap);    // 선택한 이미지 이미지뷰에 셋
-                        instream.close();   // 스트림 닫아주기
 
-                        // imagePath에 string으로 경로 저장(확인용)
-                        //UserImagePath = getRealPathFromURI(uri);
+                        instream.close();   // 스트림 닫아주기
 
                         // 현재 페이지에 갤러리 업로드 상태 메시지 출력
                         userpath.setText("Successful Upload of File");
@@ -96,9 +91,8 @@ public class SubActivity3 extends AppCompatActivity {
         }
     }
 
-//    갤러리 사진 참고: https://machine-woong.tistory.com/91 / https://jeongchul.tistory.com/287
-//    사진 url 띄우기 참고 : https://jjyloves.tistory.com/13 / https://wikidocs.net/99371
-
+//    갤러리 사진 (참고: https://machine-woong.tistory.com/91 / https://jeongchul.tistory.com/287)
+//    사진 url 띄우기 (참고 : https://jjyloves.tistory.com/13 / https://wikidocs.net/99371)
 
     // 이미지의 절대 경로를 구해주는 함수 (참고: https://hhhhhhhong.tistory.com/28)
     private String getRealPathFromURI(Uri contentURI) {
