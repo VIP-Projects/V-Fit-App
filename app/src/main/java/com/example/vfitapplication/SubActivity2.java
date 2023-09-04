@@ -14,9 +14,11 @@ public class SubActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sub2);
 
-        Button clothbtn = findViewById(R.id.clothbtn);
-        Button hairbtn = findViewById(R.id.hairbtn);
+        
+        Button clothbtn = findViewById(R.id.clothbtn);    // 의상 피팅 버튼
+        Button hairbtn = findViewById(R.id.hairbtn);      // 헤어 피팅 버튼
 
+        // 의상 피팅 버튼 클릭 시 이동
         clothbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -25,6 +27,7 @@ public class SubActivity2 extends AppCompatActivity {
             }
         });
 
+        // 헤어 피팅 버튼 클릭 시 이동
         hairbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
