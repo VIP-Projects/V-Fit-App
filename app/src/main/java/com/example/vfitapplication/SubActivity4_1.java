@@ -77,7 +77,7 @@ public class SubActivity4_1 extends AppCompatActivity {
                 customProgressDialog.show();
                 
                 neutral_fringe = "face with hair";           // 원래 이미지
-                target_fringe = "face with fringe hair";    // 목표 이미지
+                target_fringe = "face with fringe hair";    // 목표 이미지 : 앞 머리
                 mani_fringe = "4.1";                        // 변환 강도
                 Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);  // 헤어 피팅 결과 출력 위해 결과 페이지 불러옴 
 
@@ -99,7 +99,7 @@ public class SubActivity4_1 extends AppCompatActivity {
                 customProgressDialog.show();
                 
                 neutral_fringe = "face with hair";        // 원래 이미지
-                target_fringe = "face with short hair";    // 목표 이미지
+                target_fringe = "face with short hair";    // 목표 이미지 : 짧은 머리
                 mani_fringe = "7.5";                        // 변환 강도
                 Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);     // 헤어 피팅 결과 출력 위해 결과 페이지 불러옴 
 
@@ -120,7 +120,7 @@ public class SubActivity4_1 extends AppCompatActivity {
                 // 로딩창 보여주기
                 customProgressDialog.show();
                 neutral_fringe = "face with hair";        // 원래 이미지
-                target_fringe = "face with long hair";    // 목표 이미지
+                target_fringe = "face with long hair";    // 목표 이미지 : 긴 머리
                 mani_fringe = "4.1";                        // 변환 강도
                 Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);     // 헤어 피팅 결과 출력 위해 결과 페이지 불러옴 
 
@@ -141,7 +141,7 @@ public class SubActivity4_1 extends AppCompatActivity {
                 // 로딩창 보여주기
                 customProgressDialog.show();
                 neutral_fringe = "face with hair";        // 원래 이미지
-                target_fringe = "face with straight hair";// 목표 이미지
+                target_fringe = "face with straight hair";// 목표 이미지 : 생머리
                 mani_fringe = "7.5";                      // 변환 강도
                 Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);     // 헤어 피팅 결과 출력 위해 결과 페이지 불러옴 
 
@@ -162,7 +162,7 @@ public class SubActivity4_1 extends AppCompatActivity {
                 // 로딩창 보여주기
                 customProgressDialog.show();
                 neutral_fringe = "face with hair";              // 원래 이미지
-                target_fringe = "face with curly hairstyle";    // 목표 이미지
+                target_fringe = "face with curly hairstyle";    // 목표 이미지 : 곱슬머리
                 mani_fringe = "3.5";                            // 변환 강도
                 Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);     // 헤어 피팅 결과 출력 위해 결과 페이지 불러옴 
 
@@ -183,7 +183,7 @@ public class SubActivity4_1 extends AppCompatActivity {
                 // 로딩창 보여주기
                 customProgressDialog.show();
                 neutral_fringe = "face with hair";            // 원래 이미지
-                target_fringe = "face with afro hairstyle";    // 목표 이미지
+                target_fringe = "face with afro hairstyle";    // 목표 이미지 : 크고 둥글게 만든 곱슬머리
                 mani_fringe = "7.5";                            // 변환 강도
                 Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);     // 헤어 피팅 결과 출력 위해 결과 페이지 불러옴 
 
@@ -204,7 +204,7 @@ public class SubActivity4_1 extends AppCompatActivity {
                 // 로딩창 보여주기
                 customProgressDialog.show();
                 neutral_fringe = "face with hair";                // 원래 이미지
-                target_fringe = "face with hi-top fade hair";    // 목표 이미지
+                target_fringe = "face with hi-top fade hair";    // 목표 이미지 : 정수리의 머리카락을 길게 기르고 옆머리를 자르거나 매우 짧게 유지하는 이발
                 mani_fringe = "7.5";                                // 변환 강도
                 Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);     // 헤어 피팅 결과 출력 위해 결과 페이지 불러옴 
 
@@ -225,7 +225,7 @@ public class SubActivity4_1 extends AppCompatActivity {
                 // 로딩창 보여주기
                 customProgressDialog.show();
                 neutral_fringe = "face with hair";                // 원래 이미지
-                target_fringe = "face with mohawk hairstyle";    // 목표 이미지
+                target_fringe = "face with mohawk hairstyle";    // 목표 이미지 : 정수리를 중심으로 정가운데만 곧게 뻗치게 하고 양옆은 삭발
                 mani_fringe = "7.5";                            // 변환 강도
                 Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);     // 헤어 피팅 결과 출력 위해 결과 페이지 불러옴 
 
@@ -246,7 +246,7 @@ public class SubActivity4_1 extends AppCompatActivity {
                 // 로딩창 보여주기
                 customProgressDialog.show();
                 neutral_fringe = "face with hair";        // 원래 이미지
-                target_fringe = "face with bald";        // 목표 이미지
+                target_fringe = "face with bald";        // 목표 이미지 : 대머리
                 mani_fringe = "7.5";                        // 변환 강도
                 Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);     // 헤어 피팅 결과 출력 위해 결과 페이지 불러옴 
 
@@ -269,7 +269,7 @@ public class SubActivity4_1 extends AppCompatActivity {
                 // 로딩창 보여주기
                 customProgressDialog.show();
                 neutral_fringe = "face with hair";        // 원래 이미지
-                target_fringe = "face with blonde hair";    // 목표 이미지
+                target_fringe = "face with blonde hair";    // 목표 이미지 : 금발
                 mani_fringe = "7.5";                        // 변환 강도
                 Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);     // 헤어 피팅 결과 출력 위해 결과 페이지 불러옴 
 
@@ -311,7 +311,7 @@ public class SubActivity4_1 extends AppCompatActivity {
                 // 로딩창 보여주기
                 customProgressDialog.show();
                 neutral_fringe = "face with hair";        // 원래 이미지
-                target_fringe = "face with blue hair";    // 목표 이미지
+                target_fringe = "face with blue hair";    // 목표 이미지 : 파란머리
                 mani_fringe = "7.5";                        // 변환 강도
                 Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);     // 헤어 피팅 결과 출력 위해 결과 페이지 불러옴 
 
@@ -332,7 +332,7 @@ public class SubActivity4_1 extends AppCompatActivity {
                 // 로딩창 보여주기
                 customProgressDialog.show();
                 neutral_fringe = "face with hair";        // 원래 이미지
-                target_fringe = "face with white hair";    // 목표 이미지
+                target_fringe = "face with white hair";    // 목표 이미지 : 흰머리
                 mani_fringe = "7.5";                        // 변환 강도
                 Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);     // 헤어 피팅 결과 출력 위해 결과 페이지 불러옴 
 
@@ -353,7 +353,7 @@ public class SubActivity4_1 extends AppCompatActivity {
                 // 로딩창 보여주기
                 customProgressDialog.show();
                 neutral_fringe = "face with hair";        // 원래 이미지
-                target_fringe = "face with black hair";    // 목표 이미지
+                target_fringe = "face with black hair";    // 목표 이미지 : 검은머리
                 mani_fringe = "7.5";                        // 변환 강도
                 Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);     // 헤어 피팅 결과 출력 위해 결과 페이지 불러옴 
 
@@ -374,7 +374,7 @@ public class SubActivity4_1 extends AppCompatActivity {
                 // 로딩창 보여주기
                 customProgressDialog.show();
                 neutral_fringe = "face with hair";        // 원래 이미지
-                target_fringe = "face with grey hair";    // 목표 이미지
+                target_fringe = "face with grey hair";    // 목표 이미지 : 회색머리
                 mani_fringe = "7.5";                        // 변환 강도
                 Intent intent = new Intent(getApplicationContext(), SubActivity4_2.class);     // 헤어 피팅 결과 출력 위해 결과 페이지 불러옴 
 
