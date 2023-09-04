@@ -16,8 +16,8 @@
 
 File Type | files
 --|--
-javafile.java | MainActivity → SubActivity2 → … → SubActivity3_1 → SubActivity3_1_1  → … 
-layout.xml | activity_main → activity_sub2 → … → activity_sub31 → activity_sub311  → … 
+<b>javafile.java</b> | MainActivity → SubActivity2 → … → SubActivity3_1 → SubActivity3_1_1  → … 
+<b>layout.xml</b> | activity_main → activity_sub2 → … → activity_sub31 → activity_sub311  → … 
 
 <p align="center">
 <img src="https://github.com/VIP-Projects/V-Fit-App/assets/53934639/3c10f207-6c12-44fe-98e3-224c8dd3461a" style="width:600px"></p>
@@ -30,11 +30,12 @@ layout.xml | activity_main → activity_sub2 → … → activity_sub31 → acti
 <p align="center">
 <img src="https://github.com/VIP-Projects/V-Fit-App/assets/53934639/7bccd6fc-4c68-42cf-97b4-bf53d83e476f" style="width:600px"></p>
 
-#### 의상 피팅 방법 : 옷 마스크 추출 → 모델 Pose, Segmentation → 추론
+#### 의상 피팅 방법
+- 옷 마스크 추출 → 모델 Pose, Segmentation → 추론
+  -	Virtual Fitting model : Pose Estimation(Open Pose - pose_iter_440000.caffemodel)
+  -	Fashion Mask Extraction Model : U2Net Model
+  -	Human Segmentation Mask Model : ACGPN Model
 
--	Virtual Fitting model : Pose Estimation(0pen Pose - pose_iter_440000.caffemodel)
--	Fashion Mask Extraction Model : U2Net Model
--	Human Segmentation Mask Model : ACGPN Model
-
+<br>
 
 #### 헤어 피팅 방법 : 
