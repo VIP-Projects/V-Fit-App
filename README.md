@@ -1,6 +1,8 @@
-# V-Fit-App
+# V-Fit-App : 멀티모달 생성형 AI 기반 가상 피팅 앱서비스
 
 #### 2023년 공개SW 개발자대회 - [V FiT] 김준용, 길다영, 황현빈
+
+본 프로젝트에서는 사용자가 비용을 지불하기 전에 스타일을 확인하여 소요 시간과 비용을 절약하고 만족도를 높일 수 있는 의상 및 헤어 가상 피팅 서비스를 제공한다.
 
 <br><br>
 
@@ -38,11 +40,33 @@ File Type | files
 
 <br>
 
-#### 헤어 피팅 방법 : 
--
+#### 헤어 피팅 방법
+- 이미지와 헤어 정보 텍스트를 입력 → 멀티모달 수행 → 헤어 합성 이미지 생성
+  - cloud API를 통해 StyleCLIP 모델을 사용
+  - 헤어스타일 관련 텍스트 정보를 입력으로 받아 사용자 이미지를 변경하는 멀티 모달 수행 
+  - manipulation_strength 옵션을 사용하여 스타일 세기 조정
 - 종류
-  
   Types of hair fitting | hairs
   -- | --
-  헤어스타일 | fringle hair(앞머리), short hair(짧은 머리), lonb hair(긴 머리), straignt hair(생머리), culry hairstyle(곱슬머리) <br> afri hairstyle(크고 둥글게 만든 곱슬머리), hi-top fade hair(정수리의 머리카락을 길게 기르고 옆머리를 매우 짧게 이발), mohawk hairstyle(정수리를 중심으로 정가운데만 곧게 뻗치게 하고 양옆은 삭발), bald(대머리)
+  헤어스타일 | fringle hair(앞머리), short hair(짧은 머리), lonb hair(긴 머리), straignt hair(생머리),   <br> culry hairstyle(곱슬머리), afri hairstyle(크고 둥글게 만든 곱슬머리), hi-top fade hair(정수리의 머리카락을 길게 기르고 옆머리를 매우 짧게 이발),   <br> mohawk hairstyle(정수리를 중심으로 정가운데만 곧게 뻗치게 하고 양옆은 삭발), bald(대머리)
   헤어 컬러 | blond, red, blue, white, black, grey
+
+<br>
+
+#### 웹 크롤링 방법
+- 이미지 데이터 및 상품 정보 데이터 크롤링, 성별 및 카테고리별 분류, 가상 피팅 방법과의 연동 및 추천 옷 이미지 제공
+  -	(성별 – 카테고리) 별로 의상 이미지를 무신사 추천순으로 수집
+  -	의상 피팅에 적합한 이미지를 선별
+  -	사용자 추천 옷 이미지로 사용
+
+<br><br>
+
+## 팀원 역할
+
+팀원|역할
+--|--
+김준용|팀장, 의상 피팅 모델 구현 및 적용, 애플리케이션 UI제작
+길다영|팀원, 헤어 피팅 모델 구현 및 적용, 애플리케이션 UI제작
+황현빈|팀원, 크롤링 수행, 서버 구현, 애플리케이션 통신
+
+
