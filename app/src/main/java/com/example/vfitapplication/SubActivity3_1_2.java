@@ -45,7 +45,7 @@ public class SubActivity3_1_2 extends AppCompatActivity {
     Bitmap imgBitmap;
     String resultimage = "";
 
-//    String RecommendClothImage;  // 추천 옷 저장 변수
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,14 +60,14 @@ public class SubActivity3_1_2 extends AppCompatActivity {
         ImageButton recommend7 = findViewById(R.id.recommend7);
         ImageButton recommend8 = findViewById(R.id.recommend8);
 
-        recommend1.setImageResource(R.drawable.cloth1);
-        recommend2.setImageResource(R.drawable.cloth2);
-        recommend3.setImageResource(R.drawable.cloth3);
-        recommend4.setImageResource(R.drawable.cloth4);
-        recommend5.setImageResource(R.drawable.cloth5);
-        recommend6.setImageResource(R.drawable.cloth6);
-        recommend7.setImageResource(R.drawable.cloth7);
-        recommend8.setImageResource(R.drawable.cloth8);
+        recommend1.setImageResource(R.drawable.cloth1);    // 크롤링한 옷이미지1
+        recommend2.setImageResource(R.drawable.cloth2);    // 크롤링한 옷이미지2
+        recommend3.setImageResource(R.drawable.cloth3);    // 크롤링한 옷이미지3
+        recommend4.setImageResource(R.drawable.cloth4);    // 크롤링한 옷이미지4
+        recommend5.setImageResource(R.drawable.cloth5);    // 크롤링한 옷이미지5
+        recommend6.setImageResource(R.drawable.cloth6);    // 크롤링한 옷이미지6
+        recommend7.setImageResource(R.drawable.cloth7);    // 크롤링한 옷이미지7
+        recommend8.setImageResource(R.drawable.cloth8);    // 크롤링한 옷이미지8
 
         ProgressDialog customProgressDialog;
         //로딩창 객체 생성
@@ -79,7 +79,8 @@ public class SubActivity3_1_2 extends AppCompatActivity {
         Intent intent = getIntent();
         userimage = intent.getStringExtra("UserImage").toString();
 
-        recommend1.setOnClickListener(new View.OnClickListener() {    // 다음페이지로 넘어가는 버튼
+        // 크롤링한 옷이미지1 클릭 시 다음페이지로 넘어감
+        recommend1.setOnClickListener(new View.OnClickListener() {    
             @Override
             public void onClick(View view) {
                 // 로딩창 보여주기
@@ -102,10 +103,10 @@ public class SubActivity3_1_2 extends AppCompatActivity {
                         Log.v("hello", "hello : " + 2);
                     }
                 }, 10000);
-//                intent.putExtra("resultImage", resultimage);  // 유저 이미지
-//                startActivity(intent);
             }
         });
+
+        // 크롤링한 옷이미지2 클릭 시 다음페이지로 넘어감
         recommend2.setOnClickListener(new View.OnClickListener() {    // 다음페이지로 넘어가는 버튼
             @Override
             public void onClick(View view) {
@@ -129,11 +130,11 @@ public class SubActivity3_1_2 extends AppCompatActivity {
                         Log.v("hello", "hello : " + 2);
                     }
                 }, 10000);
-//                intent.putExtra("resultImage", resultimage);  // 유저 이미지
-//                startActivity(intent);
 
             }
         });
+        
+        // 크롤링한 옷이미지3 클릭 시 다음페이지로 넘어감
         recommend3.setOnClickListener(new View.OnClickListener() {    // 다음페이지로 넘어가는 버튼
             @Override
             public void onClick(View view) {
@@ -157,11 +158,11 @@ public class SubActivity3_1_2 extends AppCompatActivity {
                         Log.v("hello", "hello : " + 2);
                     }
                 }, 10000);
-//                intent.putExtra("resultImage", resultimage);  // 유저 이미지
-//                startActivity(intent);
 
             }
         });
+
+        // 크롤링한 옷이미지4 클릭 시 다음페이지로 넘어감
         recommend4.setOnClickListener(new View.OnClickListener() {    // 다음페이지로 넘어가는 버튼
             @Override
             public void onClick(View view) {
@@ -185,11 +186,11 @@ public class SubActivity3_1_2 extends AppCompatActivity {
                         Log.v("hello", "hello : " + 2);
                     }
                 }, 10000);
-//                intent.putExtra("resultImage", resultimage);  // 유저 이미지
-//                startActivity(intent);
 
             }
         });
+
+        // 크롤링한 옷이미지5 클릭 시 다음페이지로 넘어감
         recommend5.setOnClickListener(new View.OnClickListener() {    // 다음페이지로 넘어가는 버튼
             @Override
             public void onClick(View view) {
@@ -213,11 +214,11 @@ public class SubActivity3_1_2 extends AppCompatActivity {
                         Log.v("hello", "hello : " + 2);
                     }
                 }, 10000);
-//                intent.putExtra("resultImage", resultimage);  // 유저 이미지
-//                startActivity(intent);
 
             }
         });
+
+        // 크롤링한 옷이미지6 클릭 시 다음페이지로 넘어감
         recommend6.setOnClickListener(new View.OnClickListener() {    // 다음페이지로 넘어가는 버튼
             @Override
             public void onClick(View view) {
@@ -241,11 +242,10 @@ public class SubActivity3_1_2 extends AppCompatActivity {
                         Log.v("hello", "hello : " + 2);
                     }
                 }, 10000);
-//                intent.putExtra("resultImage", resultimage);  // 유저 이미지
-//                startActivity(intent);
-
             }
         });
+
+        // 크롤링한 옷이미지7 클릭 시 다음페이지로 넘어감
         recommend7.setOnClickListener(new View.OnClickListener() {    // 다음페이지로 넘어가는 버튼
             @Override
             public void onClick(View view) {
@@ -269,11 +269,11 @@ public class SubActivity3_1_2 extends AppCompatActivity {
                         Log.v("hello", "hello : " + 2);
                     }
                 }, 10000);
-//                intent.putExtra("resultImage", resultimage);  // 유저 이미지
-//                startActivity(intent);
 
             }
         });
+
+        // 크롤링한 옷이미지8 클릭 시 다음페이지로 넘어감
         recommend8.setOnClickListener(new View.OnClickListener() {    // 다음페이지로 넘어가는 버튼
             @Override
             public void onClick(View view) {
@@ -297,8 +297,6 @@ public class SubActivity3_1_2 extends AppCompatActivity {
                         Log.v("hello", "hello : " + 2);
                     }
                 }, 10000);
-//                intent.putExtra("resultImage", resultimage);  // 유저 이미지
-//                startActivity(intent);
 
             }
         });
