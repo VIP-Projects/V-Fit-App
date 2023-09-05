@@ -53,8 +53,8 @@ public class SubActivity3_1 extends AppCompatActivity {
     private static final String url1 = "http://10.0.2.2:5000/hello";
     String userimage;  // 갤러리에 있는 유저 저장 변수
     String clothimage;  // 갤러리에 있는 옷 저장 변수
-    Bitmap imgBitmap;
-    String resultimage = "";
+    Bitmap imgBitmap; // 이미지 비트맵화 저장 변수
+    String resultimage = ""; // 이미지 텍스트화 저장 변수
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,7 +63,7 @@ public class SubActivity3_1 extends AppCompatActivity {
 
         Button clothrecommend = findViewById(R.id.recommend);   // 의상 이미지 업로드 버튼
         Button clothuploadbtn = findViewById(R.id.clothupload);   // 의상 이미지 업로드 버튼
-        ImageButton nextbtn2 = findViewById(R.id.nextbtn2);
+        ImageButton nextbtn2 = findViewById(R.id.nextbtn2); // 피팅 수행 후 다음 페이지 이동 버튼
 
         // SubActivity3의 유저 이미지 불러와서 넘김
         Intent intent = getIntent();
@@ -92,21 +92,20 @@ public class SubActivity3_1 extends AppCompatActivity {
 
                 // 로딩창 보여주기
                 customProgressDialog.show();
-                
+                // 옷 이미지 텍스트화
                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
                 imgBitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream);
                 byte[] byteArray = stream.toByteArray();
                 clothimage = android.util.Base64.encodeToString(byteArray, android.util.Base64.DEFAULT);
 
                 Intent intent = new Intent(getApplicationContext(), SubActivity3_1_1.class);    // 의상 피팅 결과 출력 위해 결과 페이지 불러옴
-                Log.v("hello", "hello : " + 1);
+                // 서버로 데이터 전달 후 결과 이미지 리턴 후 결과 페이지 이동
                 sendServer();
                 new Handler().postDelayed(new Runnable(){
                     @Override
                     public void run(){
                         intent.putExtra("resultImage", resultimage);  // 의상 피팅 결과 이미지
                         startActivity(intent);
-                        Log.v("hello", "hello : " + 2);
                     }
                 }, 10000);
 
@@ -146,7 +145,7 @@ public class SubActivity3_1 extends AppCompatActivity {
         }
     }
 
-
+    // 서버로 사용자 이미지 및 옷 이미지 전달하여 의상 피팅 결과 받아오기
     public void sendServer(){
         class sendData extends AsyncTask<Void, Void, String> {
 
@@ -179,42 +178,34 @@ public class SubActivity3_1 extends AppCompatActivity {
             protected String doInBackground(Void... voids) {
 
                 try {
+                    // 통신 객체
                     OkHttpClient client = new OkHttpClient.Builder()
                             .connectTimeout(100, TimeUnit.SECONDS)
                             .writeTimeout(100, TimeUnit.SECONDS)
                             .readTimeout(100, TimeUnit.SECONDS)
                             .callTimeout(100, TimeUnit.SECONDS)
                             .build();
+                    // 데이터 json 화
                     JSONObject jsonInput = new JSONObject();
                     jsonInput.put("image1",  userimage);
                     jsonInput.put("image2",  clothimage);
-
+                    // RequestBody에 json 입력
                     RequestBody reqBody = RequestBody.create(
                             MediaType.parse("application/json; charset=utf-8"),
                             jsonInput.toString()
                     );
-
+                    // request 생성
                     Request request = new Request.Builder()
                             .post(reqBody)
                             .url(url1)
                             .build();
-
+                    // 통신 수행 후 결과 리턴
                     Response responses = null;
                     responses = client.newCall(request).execute();
                     String final_result = "";
                     final_result = responses.body().string();
                     JSONObject results = new JSONObject(final_result);
-                    //Log.v("hello", "hello : " + results.getString("data"));
-//                    byte[] encodeByte = android.util.Base64.decode(results.getString("data"), android.util.Base64.DEFAULT);
-//                    Bitmap result_bitmap = BitmapFactory.decodeByteArray(encodeByte, 0, encodeByte.length);
-//                    runOnUiThread(new Runnable(){
-//                        @Override
-//                        public void run(){
-//                            imView.setImageBitmap(result_bitmap);
-//                        }
-//                    });
                     resultimage = results.getString("data");
-
                 } catch (JSONException e) {
                     e.printStackTrace();
                 } catch (IOException e) {
