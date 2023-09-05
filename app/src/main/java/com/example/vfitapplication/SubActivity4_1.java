@@ -27,12 +27,13 @@ import okhttp3.Response;
 
 public class SubActivity4_1 extends AppCompatActivity {
 
-    private static final String url1 = "http://10.0.2.2:5000/use_hair_fit_model";
-    String userimage;
-    String neutral_fringe;
+    private static final String url1 = "http://10.0.2.2:5000/hair_fit";
+    String userimage; // 사용자 이미지
+    // 헤어 정보 텍스트
+    String neutral_fringe; 
     String target_fringe;
     String mani_fringe;
-    String resultimage = "";
+    String resultimage = ""; // 결과 이미지
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,7 +88,6 @@ public class SubActivity4_1 extends AppCompatActivity {
                     public void run(){
                         intent.putExtra("resultImage", resultimage);  // 헤어 피팅 결과 이미지
                         startActivity(intent);
-                        Log.v("hello", "hello : " + 2);
                     }
                 }, 10000);
             }
@@ -109,7 +109,6 @@ public class SubActivity4_1 extends AppCompatActivity {
                     public void run(){
                         intent.putExtra("resultImage", resultimage);  // 헤어 피팅 결과 이미지
                         startActivity(intent);
-                        Log.v("hello", "hello : " + 2);
                     }
                 }, 10000);
             }
@@ -130,7 +129,6 @@ public class SubActivity4_1 extends AppCompatActivity {
                     public void run(){
                         intent.putExtra("resultImage", resultimage);  // 헤어 피팅 결과 이미지
                         startActivity(intent);
-                        Log.v("hello", "hello : " + 2);
                     }
                 }, 10000);
             }
@@ -151,7 +149,6 @@ public class SubActivity4_1 extends AppCompatActivity {
                     public void run(){
                         intent.putExtra("resultImage", resultimage);  // 헤어 피팅 결과 이미지
                         startActivity(intent);
-                        Log.v("hello", "hello : " + 2);
                     }
                 }, 10000);
             }
@@ -172,7 +169,6 @@ public class SubActivity4_1 extends AppCompatActivity {
                     public void run(){
                         intent.putExtra("resultImage", resultimage);  // 헤어 피팅 결과 이미지
                         startActivity(intent);
-                        Log.v("hello", "hello : " + 2);
                     }
                 }, 10000);
             }
@@ -193,7 +189,6 @@ public class SubActivity4_1 extends AppCompatActivity {
                     public void run(){
                         intent.putExtra("resultImage", resultimage);  // 헤어 피팅 결과 이미지
                         startActivity(intent);
-                        Log.v("hello", "hello : " + 2);
                     }
                 }, 10000);
             }
@@ -214,7 +209,6 @@ public class SubActivity4_1 extends AppCompatActivity {
                     public void run(){
                         intent.putExtra("resultImage", resultimage);  // 헤어 피팅 결과 이미지
                         startActivity(intent);
-                        Log.v("hello", "hello : " + 2);
                     }
                 }, 10000);
             }
@@ -235,7 +229,6 @@ public class SubActivity4_1 extends AppCompatActivity {
                     public void run(){
                         intent.putExtra("resultImage", resultimage);  // 헤어 피팅 결과 이미지
                         startActivity(intent);
-                        Log.v("hello", "hello : " + 2);
                     }
                 }, 10000);
             }
@@ -256,7 +249,6 @@ public class SubActivity4_1 extends AppCompatActivity {
                     public void run(){
                         intent.putExtra("resultImage", resultimage);  // 헤어 피팅 결과 이미지
                         startActivity(intent);
-                        Log.v("hello", "hello : " + 2);
                     }
                 }, 10000);
             }
@@ -279,7 +271,6 @@ public class SubActivity4_1 extends AppCompatActivity {
                     public void run(){
                         intent.putExtra("resultImage", resultimage);  // 헤어 피팅 결과 이미지
                         startActivity(intent);
-                        Log.v("hello", "hello : " + 2);
                     }
                 }, 10000);
             }
@@ -300,7 +291,6 @@ public class SubActivity4_1 extends AppCompatActivity {
                     public void run(){
                         intent.putExtra("resultImage", resultimage);  // 헤어 피팅 결과 이미지
                         startActivity(intent);
-                        Log.v("hello", "hello : " + 2);
                     }
                 }, 10000);
             }
@@ -321,7 +311,6 @@ public class SubActivity4_1 extends AppCompatActivity {
                     public void run(){
                         intent.putExtra("resultImage", resultimage);  // 헤어 피팅 결과 이미지
                         startActivity(intent);
-                        Log.v("hello", "hello : " + 2);
                     }
                 }, 10000);
             }
@@ -342,7 +331,6 @@ public class SubActivity4_1 extends AppCompatActivity {
                     public void run(){
                         intent.putExtra("resultImage", resultimage);  // 헤어 피팅 결과 이미지
                         startActivity(intent);
-                        Log.v("hello", "hello : " + 2);
                     }
                 }, 10000);
             }
@@ -363,7 +351,6 @@ public class SubActivity4_1 extends AppCompatActivity {
                     public void run(){
                         intent.putExtra("resultImage", resultimage);  // 헤어 피팅 결과 이미지
                         startActivity(intent);
-                        Log.v("hello", "hello : " + 2);
                     }
                 }, 10000);
             }
@@ -384,12 +371,12 @@ public class SubActivity4_1 extends AppCompatActivity {
                     public void run(){
                         intent.putExtra("resultImage", resultimage);  // 헤어 피팅 결과 이미지
                         startActivity(intent);
-                        Log.v("hello", "hello : " + 2);
                     }
                 }, 10000);
             }
         });
     }
+    // 서버로 사용자 이미지 및 헤어 정보 텍스트 전달하여 헤어 피팅 결과 받아오기
     public void sendServer(){
         class sendData extends AsyncTask<Void, Void, String> {
 
@@ -422,42 +409,35 @@ public class SubActivity4_1 extends AppCompatActivity {
             protected String doInBackground(Void... voids) {
 
                 try {
+                    // 통신 객체
                     OkHttpClient client = new OkHttpClient.Builder()
                             .connectTimeout(100, TimeUnit.SECONDS)
                             .writeTimeout(100, TimeUnit.SECONDS)
                             .readTimeout(100, TimeUnit.SECONDS)
                             .callTimeout(100, TimeUnit.SECONDS)
                             .build();
+                    // 데이터 json 화
                     JSONObject jsonInput = new JSONObject();
                     jsonInput.put("image1",  userimage);
                     jsonInput.put("neutral",  neutral_fringe);
                     jsonInput.put("target",  target_fringe);
                     jsonInput.put("mani",  mani_fringe);
-
+                    // RequestBody에 json 입력
                     RequestBody reqBody = RequestBody.create(
                             MediaType.parse("application/json; charset=utf-8"),
                             jsonInput.toString()
                     );
-
+                    // request 생성
                     Request request = new Request.Builder()
                             .post(reqBody)
                             .url(url1)
                             .build();
-
+                    // 통신 수행 후 결과 리턴
                     Response responses = null;
                     responses = client.newCall(request).execute();
                     String final_result = "";
                     final_result = responses.body().string();
                     JSONObject results = new JSONObject(final_result);
-                    //Log.v("hello", "hello : " + results.getString("data"));
-//                    byte[] encodeByte = android.util.Base64.decode(results.getString("data"), android.util.Base64.DEFAULT);
-//                    Bitmap result_bitmap = BitmapFactory.decodeByteArray(encodeByte, 0, encodeByte.length);
-//                    runOnUiThread(new Runnable(){
-//                        @Override
-//                        public void run(){
-//                            imView.setImageBitmap(result_bitmap);
-//                        }
-//                    });
                     resultimage = results.getString("data");
 
                 } catch (JSONException e) {
