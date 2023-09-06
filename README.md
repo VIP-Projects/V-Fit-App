@@ -1,6 +1,7 @@
 # V Fit : 멀티모달 생성형 AI 기반 가상 피팅 앱서비스
 ### 앱 서비스 관련 Repository
 
+
 <br>
 
 #### 2023년 공개SW 개발자대회 - [V FiT] 김준용, 길다영, 황현빈
@@ -13,7 +14,7 @@
 
 의상 피팅 | 추천 의상 피팅 | 헤어 피팅
 --|--|--
-<img src="https://github.com/VIP-Projects/V-Fit-App/assets/53934639/ddd90ea7-5d5a-4ca2-a68d-9fbbe044df28" style="width:300px"> | <img src="https://github.com/VIP-Projects/V-Fit-App/assets/53934639/e1e87022-70ae-44ac-b135-1df309f41b91" style="width:300px">|<img src="https://github.com/VIP-Projects/V-Fit-App/assets/7d4f2e18-c221-4dcc-ae30-5ff418971072" style="width:300px">
+<img src="https://github.com/VIP-Projects/V-Fit-App/assets/53934639/ddd90ea7-5d5a-4ca2-a68d-9fbbe044df28" style="width:300px"> | <img src="https://github.com/VIP-Projects/V-Fit-App/assets/53934639/e1e87022-70ae-44ac-b135-1df309f41b91" style="width:300px">|<img src="https://github.com/VIP-Projects/V-Fit-App/assets/53934639/7317a44d-ff18-4080-be13-efbd5a40941c" style="width:300px">
 
 
 
