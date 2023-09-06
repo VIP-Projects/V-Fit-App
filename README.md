@@ -1,4 +1,4 @@
-# V Fit : 멀티모달 생성형 AI 기반 가상 피팅 앱서비스
+![cloth_fit](https://github.com/VIP-Projects/V-Fit-App/assets/53934639/ddd90ea7-5d5a-4ca2-a68d-9fbbe044df28)![recommend_fit](https://github.com/VIP-Projects/V-Fit-App/assets/53934639/6028f8f4-7cc6-43ca-8c3d-a4b6f15f845d)![hair_fit-min](https://github.com/VIP-Projects/V-Fit-App/assets/53934639/7d4f2e18-c221-4dcc-ae30-5ff418971072)# V Fit : 멀티모달 생성형 AI 기반 가상 피팅 앱서비스
 ### 앱 서비스 관련 Repository
 
 <br>
@@ -13,7 +13,9 @@
 
 의상 피팅 | 추천 의상 피팅 | 헤어 피팅
 --|--|--
-<img src="https://github.com/VIP-Projects/V-Fit-App/assets/53934639/389ba37d-7f37-467e-a35c-8bc055414f65" style="width:300px"> | <img src="https://github.com/VIP-Projects/V-Fit-App/assets/53934639/bff31248-aef5-40a4-b8dc-050f5749702a" style="width:300px">|<img src="https://github.com/VIP-Projects/V-Fit-App/assets/53934639/9539fe8a-edfb-4984-9c73-a65ec43ef3d5" style="width:300px">
+<img src="https://github.com/VIP-Projects/V-Fit-App/assets/53934639/389ba37d-7f37-467e-a35c-8bc055414f65" style="width:300px"> | <img src="https://github.com/VIP-Projects/V-Fit-App/assets/53934639/e1e87022-70ae-44ac-b135-1df309f41b91" style="width:300px">|<img src="https://github.com/VIP-Projects/V-Fit-App/assets/53934639/9539fe8a-edfb-4984-9c73-a65ec43ef3d5" style="width:300px">
+
+
 
 
 <br><br>
@@ -43,7 +45,8 @@ File Type | files
 <b>layout.xml</b> | activity_main → activity_sub2 → … → activity_sub31 → activity_sub311  → … 
 
 <p align="center">
-<img src="https://github.com/VIP-Projects/V-Fit-App/assets/53934639/3c10f207-6c12-44fe-98e3-224c8dd3461a" style="width:600px"></p>
+<img src="https://github.com/VIP-Projects/V-Fit-App/assets/53934639/e75deef4-4193-44c0-bb22-4688aa068520" style="width:600px"></p>
+
 
 
 -	<b> 모델 사진 업로드 페이지(옷 모델) :</b> 의상 피팅을 원하는 사용자의 사진을 업로드
